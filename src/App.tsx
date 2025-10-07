@@ -20,15 +20,68 @@ function App() {
         <h2>Timeline</h2>
         <Timeline>
           <Row
-            year="2010 - 2014"
-            text1={`Graduated with BSc in Computer Networks and Security.`}
-            text2={`University of Derby.`}
+            year="2022 September - current"
+            text1={`Lead Engineer`}
+            text2={`Neve Learning`}
+            imageSrc={`src/images/NeveLearningLogo.jfif`}
+          />
+
+          <Row
+            year="2018 April - 2022 August"
+            text1={`.NET Developer`}
+            text2={`TDX Group - Equifax`}
+            imageSrc={`src/images/TDXGroupLogo.jfif`}
+          />
+
+          <Row
+            year="2016 August - 2018 April"
+            text1={`Software Developer`}
+            text2={`EWS Digital - Orderly`}
+            imageSrc={`src/images/OrderlyLogo.jfif`}
+          />
+
+          <Row
+            year="2015 May - 2016 August"
+            text1={`Network Support Engineer`}
+            text2={`The National EPC Company`}
+            imageSrc={`src/images/NationalEPCCompanyLogo.jfif`}
+          />
+
+          <Row
+            year="2015 January - 2015 April"
+            text1={`IT Service Desk Analyst`}
+            text2={`DLNR CRC Probation Centre`}
+            imageSrc={`src/images/DLNRCRCLogo.jpeg`}
+          />
+
+          <Row
+            year="2014"
+            text1={`Graduated as BSc in Computer Networks and Security`}
+            text2={`University of Derby`}
+            image={<UniversityOfDerbyLogo />}
+          />
+          <Row
+            year="2014 January - 2014 December"
+            text1={`IT Service Technician`}
+            text2={`University of Derby`}
+            image={<UniversityOfDerbyLogo />}
+          />
+          <Row
+            year="2012 July - 2013 August"
+            text1={`Finance Systems Technician`}
+            text2={`University of Derby`}
+            image={<UniversityOfDerbyLogo />}
+          />
+          <Row
+            year="2010"
+            text1={`Started BSc in Computer Networks and Security`}
+            text2={`University of Derby`}
             image={<UniversityOfDerbyLogo />}
           />
           <Row
             year="2008 - 2010"
             text1={`Graduated with A-Levels in Computing and IT.`}
-            text2={`King's School, Macclesfield.`}
+            text2={`King's School, Macclesfield`}
             image={<KingsSchoolLogo />}
           />
         </Timeline>
@@ -41,42 +94,47 @@ type RowProps = {
   year: string;
   text1: string;
   text2?: string;
-  image: JSX.Element;
+  image?: JSX.Element;
+  imageSrc?: string;
 };
 
-function Row({ year, text1, text2, image }: RowProps): JSX.Element {
+function Row({ year, text1, text2, image, imageSrc }: RowProps): JSX.Element {
   return (
     <RowStyle>
-      <Year>
-        <p>
-          <strong>{year}</strong>
-        </p>
-      </Year>
       <TextCol>
+        <Year>
+          <p>
+            <strong>{year}</strong>
+          </p>
+        </Year>
         <p>{text1}</p>
         {text2 && <p>{text2}</p>}
       </TextCol>
-      <Image>{image}</Image>
+      {image && <Image>{image}</Image>}
+      {imageSrc && (
+        <Image>
+          <img src={imageSrc} width={"72px"} />
+        </Image>
+      )}
     </RowStyle>
   );
 }
 
-const Section = styled.div`
+const FlexCol = styled.div`
   display: flex;
   flex-direction: column;
+`;
+
+const Section = styled(FlexCol)`
   align-items: start;
   width: 100%;
 `;
 
-const Timeline = styled.div`
-  display: flex;
-  flex-direction: column;
+const Timeline = styled(FlexCol)`
   gap: 4px;
 `;
 
-const Year = styled.div`
-  display: flex;
-  flex-direction: column;
+const Year = styled(FlexCol)`
   justify-content: start;
   height: 100%;
   white-space: nowrap;
@@ -95,9 +153,7 @@ const Image = styled.div`
   border-radius: 8px;
 `;
 
-const TextCol = styled.div`
-  display: flex;
-  flex-direction: column;
+const TextCol = styled(FlexCol)`
   justify-content: start;
   align-items: start;
   height: 100%;
@@ -109,10 +165,8 @@ const RowStyle = styled.div`
   gap: 16px;
   justify-content: space-between;
   align-items: center;
-  max-width: 800px;
-  width: 100%;
   height: 80px;
-  padding: 16px 24px;
+  padding: 16px;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -120,9 +174,7 @@ const RowStyle = styled.div`
   background-color: #ffffff;
 `;
 
-const Body = styled.div`
-  display: flex;
-  flex-direction: column;
+const Body = styled(FlexCol)`
   align-items: start;
   width: 100%;
   gap: 32px;
