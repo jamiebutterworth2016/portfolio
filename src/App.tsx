@@ -31,7 +31,7 @@ function App() {
       <Section>
         <h1>Jamie Butterworth's Portfolio</h1>
       </Section>
-      <IntroImage src={`src/images/me.jpg`} />
+      <IntroImage src={`src/images/me.jpeg`} />
 
       <Section>
         <h2>Introduction</h2>
