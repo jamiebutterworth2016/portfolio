@@ -1,7 +1,14 @@
 import "./App.css";
 import styled from "styled-components";
+import Me from "./images/me.jpeg";
 import KingsSchoolLogo from "./images/KingsSchoolLogo";
 import UniversityOfDerbyLogo from "./images/UniversityOfDerbyLogo";
+import NeveLearningLogo from "./images/NeveLearningLogo.jfif";
+import TDXGroupLogo from "./images/TDXGroupLogo.jfif";
+import OrderlyLogo from "./images/OrderlyLogo.jfif";
+import NationalEPCCompanyLogo from "./images/NationalEPCCompanyLogo.jfif";
+import DLNRCRCLogo from "./images/DLNRCRCLogo.jpeg";
+
 import type { JSX } from "react";
 
 function App() {
@@ -31,7 +38,7 @@ function App() {
       <Section>
         <h1>Jamie Butterworth's Portfolio</h1>
       </Section>
-      <IntroImage src={`src/images/me.jpeg`} />
+      <IntroImage src={Me} />
 
       <Section>
         <h2>Introduction</h2>
@@ -44,7 +51,7 @@ function App() {
           <Item
             headline="Lead Engineer, Neve Learning"
             date="September 2022 – Present"
-            imageSrc={`src/images/NeveLearningLogo.jfif`}
+            imageSrc={NeveLearningLogo}
             texts={[
               {
                 text: "Web-based Learning Management System delivering an accessible (<strong>WCAG</strong>-compliant) and personalised, <strong>AI-driven</strong> learning experience for neurodiverse students.",
@@ -83,7 +90,7 @@ function App() {
           <Item
             headline=".NET Developer, Equifax TDX Group"
             date="2018 April - 2022 August"
-            imageSrc={`src/images/TDXGroupLogo.jfif`}
+            imageSrc={TDXGroupLogo}
             texts={[
               {
                 text: "Developed software services for debt collection sector.",
@@ -95,21 +102,21 @@ function App() {
           <Item
             headline="Software Developer, EWS Digital - Orderly"
             date="2016 August - 2018 April"
-            imageSrc={`src/images/OrderlyLogo.jfif`}
+            imageSrc={OrderlyLogo}
             texts={[]}
             skills={[]}
           />
           <Item
             headline="Network Support Engineer, The National EPC Company"
             date="2015 May - 2016 August"
-            imageSrc={`src/images/NationalEPCCompanyLogo.jfif`}
+            imageSrc={NationalEPCCompanyLogo}
             texts={[]}
             skills={[]}
           />
           <Item
             headline="IT Service Desk Analyst, DLNR CRC"
             date="2015 January - 2015 April"
-            imageSrc={`src/images/DLNRCRCLogo.jpeg`}
+            imageSrc={DLNRCRCLogo}
             texts={[]}
             skills={[]}
           />
