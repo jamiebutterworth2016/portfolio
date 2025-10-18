@@ -1,0 +1,108 @@
+{
+  "tech": [
+    {
+      "key": "frontend-engineering",
+      "title": "Frontend & Accessibility",
+      "details": [
+        "Builds modern, component-driven interfaces using <strong>React</strong> and <strong>TypeScript</strong>.",
+        "Collaborates with designers through <strong>Figma</strong> prototypes to deliver pixel-perfect, responsive user experiences.",
+        "Develops inclusive, mobile-first web applications which exceed <strong>WCAG 2.2</strong> accessibility standards by considering neurodiverse conditions.",
+        "Applies a user-centred, inclusive design approach to ensure seamless usability across devices and assistive technologies."
+      ]
+    },
+    {
+      "key": "software-architecture-and-design",
+      "title": "Software Architecture & Design",
+      "details": [
+        "Applies software design principles and modular architecture for scalable applications.",
+        "Completed advanced training in <strong>React</strong>, <strong>Angular</strong>, <strong>GraphQL</strong> and software design patterns.",
+        "Implements maintainable codebases with reusable, testable components.",
+        "Collaborates across teams to define and document software architecture standards.",
+        "Developed Node.js Express Web API to handle data requests."
+      ]
+    },
+    {
+      "key": "quality-and-testing",
+      "title": "Testing & Performance",
+      "details": [
+        "Writes bug-free, high quality, reusable code.",
+        "Writes <strong>Jest</strong> unit tests and <strong>Playwright</strong> end-to-end tests.",
+        "Oversees manual regression testing for stability in production releases.",
+        "Makes use of React features like contexts to manage data in memory and performance."
+      ]
+    },
+    {
+      "key": "security",
+      "title": "Authentication & Security",
+      "details": [
+        "Integrated AWS Cognito to handle authentication requests.",
+        "Follows <strong>OWASP</strong> best practices to prevent security vulnerabilities: SQL Injection, XSS, and SSRF.",
+        "Performed regular <strong>Fortify</strong> scans and code reviews to maintain secure coding standards.",
+        "Implements DevSecOps practices in CI/CD pipelines to automate security validation."
+      ]
+    },
+    {
+      "key": "cloud-architecture-and-devops",
+      "title": "Cloud DevOps",
+      "details": [
+        "Leads <strong>AWS DevOps</strong> infrastructure deployments with <strong>Terraform</strong>.",
+        "Builds CI/CD pipelines using <strong>GitHub Actions</strong> for multi-environment deployments.",
+        "Manages AWS services including CloudFront, Elastic Beanstalk, ECS, and RDS.",
+        "Uses <strong>Docker</strong> for containerised microservices.",
+        "Oversees production deployments, prepares release notes and ensures system stability.",
+        "Delivers out-of-hours hotfixes and production environment support to maintain uptime and reliability."
+      ]
+    },
+    {
+      "key": "ai-and-automation-engineering",
+      "title": "AI & Automation",
+      "details": [
+        "Integrated <strong>AWS Cloud AI services</strong> and <strong>OpenAI</strong> APIs to automate course creation and content generation.",
+        "Integrated <strong>AWS Polly</strong> for text-to-speech conversion and <strong>OpenAI</strong> for extracting transcripts, slides, and audio from video.",
+        "Develops <strong>Node.js</strong> background workers to handle AI content processing and in-app notifications.",
+        "Implements automation pipelines for content transformation and learning delivery."
+      ]
+    },
+    {
+      "key": "data-science-and-machine-learning",
+      "title": "Data Science & Machine Learning",
+      "details": [
+        "Builds machine learning models using <strong>Python</strong> and <strong>Pandas</strong> for data-driven insights.",
+        "Explores graph databases like Neo4j (Cypher, D3.js) for knowledge graph visualisation.",
+        "Applies data science techniques to enhance personalization and adaptive learning experiences.",
+        "Evaluates and integrates AI/ML models to optimise product performance and recommendations."
+      ]
+    }
+  ],
+  "soft": [
+    {
+      "key": "leadership-and-team-management",
+      "title": "Leadership and Team Management",
+      "details": [
+        "Leads agile development and product management, running stand-ups, sprint planning, demos, and retrospectives.",
+        "Refines product roadmaps and manages backlogs to align development with business goals.",
+        "Delegates effectively and maintains team morale under tight deadlines.",
+        "Mentors developers and promotes best coding practices within the team."
+      ]
+    },
+    {
+      "key": "stakeholder-engagement-and-communication",
+      "title": "Stakeholder Engagement and Communication",
+      "details": [
+        "Provides technical leadership for CivTech competitions, tenders, and government stakeholder sessions.",
+        "Champions documentation of pipelines, standards, and processes to ensure transparency and consistency.",
+        "Communicates technical concepts clearly to non-technical audiences and project stakeholders."
+      ]
+    },
+    {
+      "key": "problem-solving-and-adaptability",
+      "title": "Problem Solving and Adaptability",
+      "details": [
+        "Delivers critical hotfixes and live environment support under tight timelines.",
+        "Balances competing priorities in fast-paced agile environments.",
+        "Continuously upskills through research and training in AI, cloud architecture, and data visualisation tools.",
+        "Demonstrates adaptability by integrating emerging technologies to enhance the learning experience."
+      ]
+    }
+  ]
+}
