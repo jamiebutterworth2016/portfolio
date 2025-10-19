@@ -1,6 +1,6 @@
 import { Card, Divider, Flex, FlexCol, FlexColMd, FlexColSm } from "./Shared";
-import KingsSchoolLogo from "./images/KingsSchoolLogo";
-import UniversityOfDerbyLogo from "./images/UniversityOfDerbyLogo";
+import KingsSchoolLogo from "./images/KingsSchoolLogo.jpeg";
+import UniversityOfDerbyLogo from "./images/UniversityOfDerbyLogo.jpeg";
 import NeveLearningLogo from "./images/NeveLearningLogo.jfif";
 import TDXGroupLogo from "./images/TDXGroupLogo.jfif";
 import OrderlyLogo from "./images/OrderlyLogo.jfif";
@@ -55,7 +55,7 @@ export default function TimelineArea(): JSX.Element {
       <Item
         headline="University of Derby"
         date="2010 - 2014"
-        image={<UniversityOfDerbyLogo />}
+        imageSrc={UniversityOfDerbyLogo}
         texts={[
           {
             year: `2014 July`,
@@ -74,7 +74,7 @@ export default function TimelineArea(): JSX.Element {
       <Item
         headline="King's School, Macclesfield"
         date="2008 - 2010"
-        image={<KingsSchoolLogo />}
+        imageSrc={KingsSchoolLogo}
         texts={[
           {
             year: `2008 - 2010`,
@@ -98,13 +98,7 @@ type RowProps = {
   texts: Text[];
 };
 
-function Item({
-  headline,
-  date,
-  texts,
-  image,
-  imageSrc,
-}: RowProps): JSX.Element {
+function Item({ headline, date, texts, imageSrc }: RowProps): JSX.Element {
   return (
     <Card>
       <HeadlineRow>
@@ -112,8 +106,6 @@ function Item({
           <h3>{headline}</h3>
           <p>{date}</p>
         </FlexColSm>
-
-        {image && <Image>{image}</Image>}
         {imageSrc && (
           <Image>
             <img src={imageSrc} width={"72px"} />

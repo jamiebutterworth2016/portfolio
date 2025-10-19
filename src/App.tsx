@@ -22,14 +22,10 @@ function App() {
   >("intro");
 
   return (
-    <FlexCol>
+    <Container>
       <FlexColSm>
         <HeaderRow>
-          <h1>
-            Jamie Butterworth's
-            <br />
-            Interactive CV
-          </h1>
+          <h1>Jamie Butterworth's Interactive CV</h1>
           <IntroImage src={Me} />
         </HeaderRow>
 
@@ -59,28 +55,25 @@ function App() {
         <Content
           heading={"Introduction"}
           area={<IntroArea />}
-          nextTitle="My Skills"
+          nextTitle="View my skills"
           nextClick={() => {
             setActiveTab("skills");
           }}
         />
       )}
       {activeTab === "skills" && (
-        <Content
-          heading={"Skills"}
-          area={<SkillsArea />}
-          nextTitle="Employment timeline"
-          nextClick={() => {
-            setActiveTab("timeline");
-          }}
-        />
+        <Content heading={"Skills"} area={<SkillsArea />} />
       )}
       {activeTab === "timeline" && (
         <Content heading={"Employment Timeline"} area={<TimelineArea />} />
       )}
-    </FlexCol>
+    </Container>
   );
 }
+
+const Container = styled(FlexCol)`
+  padding: 8px 16px;
+`;
 
 type ContentProps = {
   heading: string;
@@ -116,7 +109,7 @@ const TabContent = styled(FlexColMd)`
 `;
 
 const NextButtonRow = styled(FlexEnd)`
-  max-width: 700px;
+  max-width: 800px;
   padding: 16px;
 `;
 
@@ -128,7 +121,8 @@ const TabsRow = styled(Flex)`
 const HeaderRow = styled(FlexSm)`
   justify-content: space-between;
   align-items: center;
-  max-width: 700px;
+  max-width: 850px;
+  width: 100%;
 `;
 
 const IntroImage = styled.img`

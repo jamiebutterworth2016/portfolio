@@ -23,8 +23,9 @@ export default function SkillsArea() {
         <FlexColLg>
           <h3>Technical Skills</h3>
           <SkillsRow>
-            {tech.map((c) => (
+            {tech.map((c, i) => (
               <TechSkillButton
+                key={i}
                 selected={techSkill.key === c.key}
                 onClick={() => setTechSkill(c)}
               >
@@ -49,8 +50,9 @@ export default function SkillsArea() {
         <FlexColLg>
           <h3>Soft Skills</h3>
           <SkillsRow>
-            {soft.map((c) => (
+            {soft.map((c, i) => (
               <SoftSkillButton
+                key={i}
                 selected={softSkill.key === c.key}
                 onClick={() => setSoftSkill(c)}
               >

@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+const Sizes = {
+  maxWidth: "800px",
+};
+
 const Flex = styled.div`
   display: flex;
 `;
@@ -36,12 +40,12 @@ const Divider = styled.hr`
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin: 0;
-  max-width: 700px;
+  max-width: ${Sizes.maxWidth};
 `;
 
 const Card = styled(FlexColMd)`
   padding: 16px;
-  max-width: 700px;
+  max-width: ${Sizes.maxWidth};
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -57,6 +61,8 @@ const Colour = {
 
   lightBlue: `color-mix(in srgb, #0ea5e9 50%, #ffffffff)`,
   lightOrange: `color-mix(in srgb, #ff6a00ff 50%, #ffffffff)`,
+  lightYellow: `color-mix(in srgb, #eeff00ff 50%, #ffffffff)`,
+  lightGreen: `color-mix(in srgb, #00ff04ff 50%, #ffffffff)`,
 };
 
 export {
@@ -70,5 +76,6 @@ export {
   FlexColLg,
   Divider,
   Card,
+  Sizes,
   Colour,
 };

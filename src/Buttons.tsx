@@ -38,11 +38,7 @@ const TabButton = styled(Button)<SelectButtonProps>`
       background: ${Colour.blue};
       border: 1px solid ${Colour.blue};
       color: ${Colour.white};
-      box-shadow: 0 0 0 2px ${Colour.lightBlue};
     `}
-
-  border-bottom: ${({ selected }) =>
-    selected ? `2px solid ${Colour.blue}` : "2px solid transparent"};
 `;
 
 const SkillButton = styled(Button)`

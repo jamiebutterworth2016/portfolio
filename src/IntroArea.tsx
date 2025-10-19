@@ -17,12 +17,12 @@ export default function IntroArea(): JSX.Element {
         <FlexColMd>
           <p>
             <strong>
-              👋 Hello, I'm Jamie, a lead engineer with 9 years' software industry
-              experience.
+              👋 Hello, I'm Jamie, a lead engineer and full-stack developer with
+              9 years' software industry experience.
             </strong>
             <br />
-            Over my career, I developed many software projects, acquiring many
-            technical skills:
+            Over my career, I developed many software projects and acquired a strong
+            technical skillset:
           </p>
           <SkillPyramid />
           <Divider />
@@ -32,8 +32,8 @@ export default function IntroArea(): JSX.Element {
           <FlexColSm>
             <p>
               <strong>
-                Since 2022, I've developed a web-based accessible
-                learning platform: Neve Learning.
+                Since 2022, I've developed a web-based accessible learning
+                platform: Neve Learning.
               </strong>
               <br />
             </p>

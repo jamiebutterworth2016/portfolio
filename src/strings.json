@@ -12,23 +12,14 @@
     },
     {
       "key": "software-architecture-and-design",
-      "title": "Software Architecture & Design",
+      "title": "Architecture Design",
       "details": [
         "Applies software design principles and modular architecture for scalable applications.",
         "Completed advanced training in <strong>React</strong>, <strong>Angular</strong>, <strong>GraphQL</strong> and software design patterns.",
         "Implements maintainable codebases with reusable, testable components.",
         "Collaborates across teams to define and document software architecture standards.",
-        "Developed Node.js Express Web API to handle data requests."
-      ]
-    },
-    {
-      "key": "quality-and-testing",
-      "title": "Testing & Performance",
-      "details": [
-        "Writes bug-free, high quality, reusable code.",
-        "Writes <strong>Jest</strong> unit tests and <strong>Playwright</strong> end-to-end tests.",
-        "Oversees manual regression testing for stability in production releases.",
-        "Makes use of React features like contexts to manage data in memory and performance."
+        "Developed Node.js Express Web API to handle data requests.",
+        "Develops <strong>Node.js</strong> background workers to handle AI content processing and in-app notifications."
       ]
     },
     {
@@ -54,54 +45,75 @@
       ]
     },
     {
-      "key": "ai-and-automation-engineering",
-      "title": "AI & Automation",
+      "key": "cloud-ai-service-integrations",
+      "title": "Cloud AI Service Integrations",
       "details": [
         "Integrated <strong>AWS Cloud AI services</strong> and <strong>OpenAI</strong> APIs to automate course creation and content generation.",
         "Integrated <strong>AWS Polly</strong> for text-to-speech conversion and <strong>OpenAI</strong> for extracting transcripts, slides, and audio from video.",
-        "Develops <strong>Node.js</strong> background workers to handle AI content processing and in-app notifications.",
         "Implements automation pipelines for content transformation and learning delivery."
       ]
     },
     {
-      "key": "data-science-and-machine-learning",
-      "title": "Data Science & Machine Learning",
+      "key": "ai-and-automation-engineering",
+      "title": "AI & Machine Learning",
       "details": [
         "Builds machine learning models using <strong>Python</strong> and <strong>Pandas</strong> for data-driven insights.",
         "Explores graph databases like Neo4j (Cypher, D3.js) for knowledge graph visualisation.",
         "Applies data science techniques to enhance personalization and adaptive learning experiences.",
         "Evaluates and integrates AI/ML models to optimise product performance and recommendations."
       ]
+    },
+    {
+      "key": "quality-and-testing",
+      "title": "Testing & Performance",
+      "details": [
+        "Writes <strong>Playwright</strong> tests to simulate user journeys across end-to-end stack: <strong>React</strong>, <strong>Node.js</strong>, <strong>PostgreSQL</strong> database.",
+        "Integrates <strong>Playwright</strong> tests with <strong>GitHub Actions</strong> CI/CD pipelines, ensuring all tests pass to maintain app stability and developer confidence.",
+        "Writes <strong>Jest</strong> unit tests to ensure functions meet expected behaviour and prevent bugs.",
+        "Optimises app performance, using <strong>React</strong> contexts, memoization and efficient data fetching to reduce re-renders and latency."
+      ]
     }
   ],
   "soft": [
     {
-      "key": "leadership-and-team-management",
-      "title": "Leadership and Team Management",
+      "key": "leader",
+      "title": "Leader and Mentor",
       "details": [
-        "Leads agile development and product management, running stand-ups, sprint planning, demos, and retrospectives.",
-        "Refines product roadmaps and manages backlogs to align development with business goals.",
-        "Delegates effectively and maintains team morale under tight deadlines.",
-        "Mentors developers and promotes best coding practices within the team."
-      ]
-    },
-    {
-      "key": "stakeholder-engagement-and-communication",
-      "title": "Stakeholder Engagement and Communication",
-      "details": [
-        "Provides technical leadership for CivTech competitions, tenders, and government stakeholder sessions.",
-        "Champions documentation of pipelines, standards, and processes to ensure transparency and consistency.",
-        "Communicates technical concepts clearly to non-technical audiences and project stakeholders."
+        "Champions agile software development and ceremonies: daily stand-ups, retrospectives and demos to stakeholders.",
+        "Manages backlog, refines roadmap and plans sprints to meet client expectations of feature delivery times.",
+        "Fosters a psychologically safe, rewarding culture which encourages innovation and ownership.",
+        "Encourages team growth by conducting code reviews, knowledge-sharing sessions and internal workshops.",
+        "Creates onboarding resources and technical documentation to assist developers."
       ]
     },
     {
       "key": "problem-solving-and-adaptability",
-      "title": "Problem Solving and Adaptability",
+      "title": "Solutionist",
       "details": [
-        "Delivers critical hotfixes and live environment support under tight timelines.",
-        "Balances competing priorities in fast-paced agile environments.",
-        "Continuously upskills through research and training in AI, cloud architecture, and data visualisation tools.",
-        "Demonstrates adaptability by integrating emerging technologies to enhance the learning experience."
+        "Responds rapidly to critical production issues, delivering hotfixes and restoring service stability.",
+        "Balances evolving project priorities in dynamic, high-paced agile environments without compromising quality or deadlines.",
+        "Adapts quickly to new frameworks, cloud platforms and AI technologies, integrating them into existing systems.",
+        "Demonstrates resourcefulness in overcoming technical blockers and designing scalable, future-proof solutions."
+      ]
+    },
+    {
+      "key": "strategic-vision-and-innovation",
+      "title": "Strategic Visionary and Innovator",
+      "details": [
+        "Identifies emerging technologies and assesses their potential to improve scalability, maintainability, and accessibility.",
+        "Contributes to long-term technical roadmaps, ensuring architectural decisions align with organisational objectives.",
+        "Leads proof-of-concept initiatives to evaluate innovative solutions before full-scale adoption.",
+        "Advocates for sustainable engineering practices, balancing speed of delivery with long-term system resilience."
+      ]
+    },
+    {
+      "key": "communicator",
+      "title": "Communicator",
+      "details": [
+        "Translates complex technical requirements into clear, actionable insights for non-technical stakeholders.",
+        "Leads technical discussions in CivTech competitions, tenders and government projects.",
+        "Promotes transparency through comprehensive documentation of pipelines, processes and architectural decisions.",
+        "Builds strong relationships with design, product and operations teams to ensure cohesive delivery and shared accountability."
       ]
     }
   ]
