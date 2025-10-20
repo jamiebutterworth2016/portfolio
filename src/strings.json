@@ -1,69 +1,74 @@
 {
   "tech": [
     {
+      "key": "security",
+      "title": "🛡️ Security & Authentication",
+      "details": [
+        "Applies a <strong>security-first mindset</strong>, ensuring code does not introduce vulnerabilities.",
+        "Implements <strong>OWASP Top 10</strong> best practices to prevent SQL Injection, XSS, SSRF and CSRF attacks.",
+        "Performs regular <strong>Fortify</strong> scans and code reviews to detect and fix security issues.",
+        "Integrated <strong>AWS Cognito</strong> for user authentication and authorization, including sign-up flows and multi-factor authentication (MFA).",
+        "Implements secure <strong>JWT-based authentication</strong> between <strong>React</strong> frontends and <strong>Node.js</strong> backends with proper token validation and refresh logic.",
+        "Uses <strong>role-based access control (RBAC)</strong> to restrict user permissions based on roles and responsibilities.",
+        "Applies the <strong>Principle of Least Privilege (PoLP)</strong> across infrastructure and application layers."
+      ]
+    },
+    {
       "key": "frontend",
       "title": "🎨 Frontend, Design & Accessibility",
       "details": [
-        "Builds modern component-driven interfaces using <strong>React</strong> and <strong>TypeScript</strong>.",
-        "Creates reusable modular components to keep the codebase lean and efficient.",
-        "Optimises performance through <strong>React Context</strong> and effective state management.",
-        "Implements consistent styling with <strong>Styled Components</strong> using centralised design tokens for colours, typography and spacing.",
-        "Uses media queries to ensure full responsiveness across all screen sizes from desktop to mobile.",
-        "Collaborates closely with designers via <strong>Figma</strong>.",
-        "Exceeds <strong>WCAG 2.2</strong> accessibility standards through inclusive user-centred design supporting neurodiverse and assistive-technology users."
+        "Builds modern, component-driven UIs with <strong>React</strong> and <strong>TypeScript</strong>.",
+        "Creates reusable modular components to maintain a clean and efficient codebase.",
+        "Optimises performance using <strong>React Context</strong>, memoization and efficient state management.",
+        "Applies consistent design with <strong>Styled Components</strong> and shared design tokens for colour, typography and spacing.",
+        "Ensures responsive layouts with CSS media queries across all devices.",
+        "Collaborates closely with designers in <strong>Figma</strong> for seamless design-to-code workflows.",
+        "Exceeds <strong>WCAG 2.2</strong> standards through inclusive design supporting neurodiverse and assistive-technology users."
       ]
     },
     {
       "key": "backend",
       "title": "🏛️ Backend & Architecture",
       "details": [
-        "Designs scalable modular software architectures across frontend and backend systems using <strong>React</strong>, <strong>Node.js</strong> and <strong>PostgreSQL</strong>.",
-        "<strong>Node.js Web APIs</strong> with Express to handle data requests and maintain backend logic.",
-        "<strong>Node.js background workers</strong> responding to <strong>AWS SQS queues</strong> to process AI content generation requests and handle in-app notifications.",
-        "Documents a map of system architecture ensuring clarity of component interactions and data flow across infrastructure.",
-        "Applies software design principles and patterns to create maintainable, testable and reusable components across the stack."
+        "Designs scalable, modular architectures using <strong>Node.js</strong>, <strong>React</strong> and <strong>PostgreSQL</strong>.",
+        "Builds <strong>RESTful APIs</strong> with Express to manage data flow and backend logic.",
+        "Implements <strong>Node.js background workers</strong> consuming <strong>AWS SQS queues</strong> for AI content generation and in-app notifications.",
+        "Documents architecture diagrams to clarify component interactions and data flow.",
+        "Applies proven design principles and patterns to ensure maintainable and testable code."
       ]
     },
     {
       "key": "devops",
       "title": "☁️ Cloud DevOps & AI Services",
       "details": [
-        "<strong>AWS services</strong> and <strong>Terraform</strong> to deploy and manage cloud infrastructure.",
-        "Builds CI/CD pipelines using <strong>GitHub Actions</strong> for multi-environment deployments.",
-        "Manages AWS services including CloudFront, Elastic Beanstalk, ECS, and RDS.",
-        "Uses <strong>Docker</strong> for containerised microservices.",
-        "Integrated <strong>AWS Cloud AI services</strong> and <strong>OpenAI</strong> APIs to automate course creation and content generation.",
-        "Integrated <strong>AWS Polly</strong> for text-to-speech conversion and <strong>OpenAI</strong> for extracting transcripts, slides, and audio from video.",
-        "Implements automation pipelines for content transformation and learning delivery."
+        "Deploys and manages infrastructure using <strong>AWS</strong> and <strong>Terraform</strong>.",
+        "Builds CI/CD pipelines with <strong>GitHub Actions</strong> for automated, multi-environment deployments.",
+        "Manages AWS services including CloudFront, Elastic Beanstalk, ECS and RDS.",
+        "Uses <strong>Docker</strong> for containerised microservices to ensure consistent environments.",
+        "Integrates <strong>AWS Cloud AI services</strong> and <strong>OpenAI APIs</strong> to automate course creation and content generation.",
+        "Uses <strong>AWS Polly</strong> for text-to-speech and <strong>OpenAI</strong> models for transcript, slide and audio extraction.",
+        "Automates content transformation pipelines for scalable learning delivery."
       ]
     },
     {
-      "key": "security",
-      "title": "🛡️ Security & Authentication",
+      "key": "ai_ml",
+      "title": "🤖 AI & Machine Learning",
       "details": [
-        "Integrated AWS Cognito to handle authentication requests.",
-        "Follows <strong>OWASP</strong> best practices to prevent security vulnerabilities: SQL Injection, XSS, and SSRF.",
-        "Performed regular <strong>Fortify</strong> scans and code reviews to maintain secure coding standards."
+        "Builds <strong>machine learning models</strong> with <strong>Python</strong> and <strong>Pandas</strong> to generate data-driven insights.",
+        "Developed a model to identify learning preferences by clustering behavioural and performance data for personalised learning.",
+        "Explores <strong>Neo4j</strong> graph databases with <strong>Cypher</strong> and <strong>D3.js</strong> for knowledge graph visualisation and learner-content mapping."
       ]
     },
     {
-      "key": "ai-and-automation-engineering",
-      "title": "🧠 AI & Machine Learning",
-      "details": [
-        "Builds machine learning models using <strong>Python</strong> and <strong>Pandas</strong> for data-driven insights.",
-        "Explores graph databases like Neo4j (Cypher, D3.js) for knowledge graph visualisation.",
-        "Applies data science techniques to enhance personalization and adaptive learning experiences.",
-        "Evaluates and integrates AI/ML models to optimise product performance and recommendations."
-      ]
-    },
-    {
-      "key": "quality-and-testing",
+      "key": "testing_performance",
       "title": "🧪 Testing & Performance",
       "details": [
-        "Writes <strong>Playwright</strong> tests to simulate user journeys across end-to-end stack: <strong>React</strong>, <strong>Node.js</strong>, <strong>PostgreSQL</strong> database.",
-        "Integrates <strong>Playwright</strong> tests with <strong>GitHub Actions</strong> CI/CD pipelines, ensuring all tests pass to maintain app stability and developer confidence.",
-        "Writes <strong>Jest</strong> unit tests to ensure functions meet expected behaviour and prevent bugs.",
-        "Optimises app performance, using <strong>React</strong> contexts, memoization and efficient data fetching to reduce re-renders and latency."
+        "Treats testing and performance as core to development, ensuring quality and stability before deployment.",
+        "Writes <strong>Playwright</strong> tests to simulate key user journeys across <strong>React</strong>, <strong>Node.js</strong> and <strong>PostgreSQL</strong>.",
+        "Integrates <strong>Playwright</strong> into <strong>GitHub Actions</strong> CI/CD pipelines, gating production deployments on test success.",
+        "Writes <strong>Jest</strong> unit tests for backend services to ensure correctness and maintainability.",
+        "Optimises frontend performance using <strong>React Context</strong>, memoization and efficient data fetching.",
+        "Improves <strong>PostgreSQL</strong> query speed with well-chosen indexes for frequently accessed data."
       ]
     }
   ],
@@ -72,43 +77,66 @@
       "key": "leader",
       "title": "🧭 Leader & Mentor",
       "details": [
-        "Champions agile software development and ceremonies: daily stand-ups, retrospectives and demos to stakeholders.",
-        "Manages backlog, refines roadmap and plans sprints to meet client expectations of feature delivery times.",
-        "Fosters a psychologically safe, rewarding culture which encourages innovation and ownership.",
-        "Encourages team growth by conducting code reviews, knowledge-sharing sessions and internal workshops.",
-        "Creates onboarding resources and technical documentation to assist developers.",
-        "Oversees production deployments, prepares release notes and ensures system stability.",
-        "Delivers out-of-hours hotfixes and production environment support to maintain uptime and reliability."
+        "Leads development teams with a balance of technical guidance and people-focused mentorship, ensuring delivery of high-quality features on time.",
+        "Champions agile ceremonies including stand-ups, retrospectives and demos to keep teams aligned and clients informed.",
+        "Drives roadmap planning and sprint prioritisation, translating strategic goals into actionable plans.",
+        "Leads by example in complex feature development and deployments, setting performance and quality standards.",
+        "Fosters a psychologically safe and rewarding culture that encourages innovation, accountability and learning.",
+        "Mentors developers via code reviews, workshops and documentation to improve team capability and consistency."
       ]
     },
     {
-      "key": "problem-solving-and-adaptability",
-      "title": "🧩 Problem-Solver",
+      "key": "strategist",
+      "title": "🧩 Strategist & Problem Solver",
       "details": [
-        "Responds rapidly to critical production issues, delivering hotfixes and restoring service stability.",
-        "Balances evolving project priorities in dynamic, high-paced agile environments without compromising quality or deadlines.",
-        "Adapts quickly to new frameworks, cloud platforms and AI technologies, integrating them into existing systems.",
-        "Demonstrates resourcefulness in overcoming technical blockers and designing scalable, future-proof solutions."
+        "Thinks strategically about software design, aligning technical decisions with long-term business goals and user needs.",
+        "Solves complex challenges efficiently, balancing performance, scalability and maintainability.",
+        "Demonstrates resourcefulness under tight deadlines and low-resource environments, delivering high-impact solutions quickly.",
+        "Responds rapidly to production issues, restoring stability while addressing root causes.",
+        "Makes informed, timely decisions, prioritising high-impact work and taking ownership of outcomes.",
+        "Identifies risks proactively and implements mitigations to ensure successful delivery."
       ]
     },
     {
-      "key": "strategic-vision-and-innovation",
-      "title": "💡 Strategic Visionary & Innovator",
+      "key": "innovation",
+      "title": "💡 Innovator",
       "details": [
-        "Identifies emerging technologies and assesses their potential to improve scalability, maintainability, and accessibility.",
-        "Contributes to long-term technical roadmaps, ensuring architectural decisions align with organisational objectives.",
-        "Leads proof-of-concept initiatives to evaluate innovative solutions before full-scale adoption.",
-        "Advocates for sustainable engineering practices, balancing speed of delivery with long-term system resilience."
+        "Proactively improves software beyond formal requirements, enhancing performance, usability and developer efficiency.",
+        "Contributes original solutions in planning and design discussions, shaping product direction creatively.",
+        "Stays informed on emerging technologies and trends, integrating relevant tools to modernise the tech stack.",
+        "Leads proof-of-concept initiatives to test innovative approaches before full adoption.",
+        "Encourages team experimentation and critical thinking to deliver smarter, more resilient software."
       ]
     },
     {
       "key": "communicator",
       "title": "💬 Communicator",
       "details": [
-        "Translates complex technical requirements into clear, actionable insights for non-technical stakeholders.",
-        "Leads technical discussions in CivTech competitions, tenders and government projects.",
-        "Promotes transparency through comprehensive documentation of pipelines, processes and architectural decisions.",
-        "Builds strong relationships with design, product and operations teams to ensure cohesive delivery and shared accountability."
+        "Explains complex technical concepts clearly to both technical and non-technical stakeholders.",
+        "Engages professionally with internal teams and external partners, providing timely responses.",
+        "Leads discussions in technical meetings and projects, ensuring all voices are heard and considered.",
+        "Practices active listening and collaborative decision-making to choose the best path forward.",
+        "Promotes transparency through thorough documentation of processes, pipelines and architectural decisions."
+      ]
+    },
+    {
+      "key": "collaboration",
+      "title": "🤝 Collaboration & Teamwork",
+      "details": [
+        "Works effectively with cross-functional teams to deliver cohesive software solutions.",
+        "Facilitates knowledge-sharing and encourages diverse perspectives to reach optimal decisions.",
+        "Resolves conflicts constructively, maintaining team harmony and project progress.",
+        "Builds trust and rapport across teams through transparency, reliability and engagement."
+      ]
+    },
+    {
+      "key": "adaptability",
+      "title": "🔄 Adaptability & Continuous Learning",
+      "details": [
+        "Quickly adapts to evolving technologies, frameworks and team structures.",
+        "Embraces change as an opportunity, experimenting with tools and processes to improve delivery.",
+        "Continuously expands knowledge in software engineering, cloud platforms and AI to enhance system design.",
+        "Encourages a learning culture within teams, mentoring others to adopt best practices and stay current."
       ]
     }
   ]

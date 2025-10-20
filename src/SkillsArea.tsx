@@ -137,7 +137,7 @@ function SkillModal({
       <FlexEnd>
         <Button
           onClick={() => setSelectedSkill(nextSkill)}
-          style={{ width: "320px", textAlign: "right" }}
+          style={{ width: "375px", textAlign: "right" }}
         >
           {`Next: ${nextSkill.title} →`}
         </Button>
@@ -149,7 +149,7 @@ function SkillModal({
         <Button
           onClick={() => setSelectedSkill(previousSkill)}
           style={{
-            width: "350px",
+            width: "375px",
           }}
         >
           {`← Previous: ${previousSkill.title}`}
@@ -162,14 +162,14 @@ function SkillModal({
         <Button
           onClick={() => setSelectedSkill(previousSkill)}
           style={{
-            width: "350px",
+            width: "375px",
           }}
         >
           {`← Previous: ${previousSkill.title}`}
         </Button>
         <Button
           onClick={() => setSelectedSkill(nextSkill)}
-          style={{ width: "320px", textAlign: "right" }}
+          style={{ width: "375px", textAlign: "right" }}
         >
           {`Next: ${nextSkill.title} →`}
         </Button>
@@ -200,8 +200,10 @@ function SkillModal({
             ))}
           </ul>
         </FlexColSm>
-
-        {navigation}
+        <FlexColMd>
+          <Divider />
+          {navigation}
+        </FlexColMd>
       </ModalBody>
     </ModalBackground>
   );
@@ -214,7 +216,7 @@ const ModalBackground = styled.div`
 `;
 
 const ModalBody = styled(FlexColBetween)`
-  height: 360px;
+  height: 400px;
   max-width: 900px;
   position: relative;
   top: 300px;
