@@ -62,7 +62,14 @@ function App() {
         />
       )}
       {activeTab === "skills" && (
-        <Content heading={"Skills"} area={<SkillsArea />} />
+        <Content
+          heading={"Skills"}
+          area={<SkillsArea />}
+          nextTitle="View my employment timeline"
+          nextClick={() => {
+            setActiveTab("timeline");
+          }}
+        />
       )}
       {activeTab === "timeline" && (
         <Content heading={"Employment Timeline"} area={<TimelineArea />} />
@@ -91,20 +98,20 @@ function Content({
   return (
     <TabContent>
       <h2>{heading}</h2>
-      <FlexColSm>
+      <FlexCol>
         {area}
         {nextTitle && nextClick && (
           <NextButtonRow>
             <Button onClick={nextClick}>{nextTitle} →</Button>
           </NextButtonRow>
         )}
-      </FlexColSm>
+      </FlexCol>
     </TabContent>
   );
 }
 
 const TabContent = styled(FlexColMd)`
-  padding: 24px 16px 0;
+  padding: 16px;
   background: ${`color-mix(in srgb, ${Colour.black} 5%, ${Colour.white})`};
 `;
 

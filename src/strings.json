@@ -1,61 +1,54 @@
 {
   "tech": [
     {
-      "key": "frontend-engineering",
-      "title": "Frontend & Accessibility",
+      "key": "frontend",
+      "title": "🎨 Frontend, Design & Accessibility",
       "details": [
-        "Builds modern, component-driven interfaces using <strong>React</strong> and <strong>TypeScript</strong>.",
-        "Collaborates with designers through <strong>Figma</strong> prototypes to deliver pixel-perfect, responsive user experiences.",
-        "Develops inclusive, mobile-first web applications which exceed <strong>WCAG 2.2</strong> accessibility standards by considering neurodiverse conditions.",
-        "Applies a user-centred, inclusive design approach to ensure seamless usability across devices and assistive technologies."
+        "Builds modern component-driven interfaces using <strong>React</strong> and <strong>TypeScript</strong>.",
+        "Creates reusable modular components to keep the codebase lean and efficient.",
+        "Optimises performance through <strong>React Context</strong> and effective state management.",
+        "Implements consistent styling with <strong>Styled Components</strong> using centralised design tokens for colours, typography and spacing.",
+        "Uses media queries to ensure full responsiveness across all screen sizes from desktop to mobile.",
+        "Collaborates closely with designers via <strong>Figma</strong>.",
+        "Exceeds <strong>WCAG 2.2</strong> accessibility standards through inclusive user-centred design supporting neurodiverse and assistive-technology users."
       ]
     },
     {
-      "key": "software-architecture-and-design",
-      "title": "Architecture Design",
+      "key": "backend",
+      "title": "🏛️ Backend & Architecture",
       "details": [
-        "Applies software design principles and modular architecture for scalable applications.",
-        "Completed advanced training in <strong>React</strong>, <strong>Angular</strong>, <strong>GraphQL</strong> and software design patterns.",
-        "Implements maintainable codebases with reusable, testable components.",
-        "Collaborates across teams to define and document software architecture standards.",
-        "Developed Node.js Express Web API to handle data requests.",
-        "Develops <strong>Node.js</strong> background workers to handle AI content processing and in-app notifications."
+        "Designs scalable modular software architectures across frontend and backend systems using <strong>React</strong>, <strong>Node.js</strong> and <strong>PostgreSQL</strong>.",
+        "<strong>Node.js Web APIs</strong> with Express to handle data requests and maintain backend logic.",
+        "<strong>Node.js background workers</strong> responding to <strong>AWS SQS queues</strong> to process AI content generation requests and handle in-app notifications.",
+        "Documents a map of system architecture ensuring clarity of component interactions and data flow across infrastructure.",
+        "Applies software design principles and patterns to create maintainable, testable and reusable components across the stack."
       ]
     },
     {
-      "key": "security",
-      "title": "Authentication & Security",
+      "key": "devops",
+      "title": "☁️ Cloud DevOps & AI Services",
       "details": [
-        "Integrated AWS Cognito to handle authentication requests.",
-        "Follows <strong>OWASP</strong> best practices to prevent security vulnerabilities: SQL Injection, XSS, and SSRF.",
-        "Performed regular <strong>Fortify</strong> scans and code reviews to maintain secure coding standards.",
-        "Implements DevSecOps practices in CI/CD pipelines to automate security validation."
-      ]
-    },
-    {
-      "key": "cloud-architecture-and-devops",
-      "title": "Cloud DevOps",
-      "details": [
-        "Leads <strong>AWS DevOps</strong> infrastructure deployments with <strong>Terraform</strong>.",
+        "<strong>AWS services</strong> and <strong>Terraform</strong> to deploy and manage cloud infrastructure.",
         "Builds CI/CD pipelines using <strong>GitHub Actions</strong> for multi-environment deployments.",
         "Manages AWS services including CloudFront, Elastic Beanstalk, ECS, and RDS.",
         "Uses <strong>Docker</strong> for containerised microservices.",
-        "Oversees production deployments, prepares release notes and ensures system stability.",
-        "Delivers out-of-hours hotfixes and production environment support to maintain uptime and reliability."
-      ]
-    },
-    {
-      "key": "cloud-ai-service-integrations",
-      "title": "Cloud AI Service Integrations",
-      "details": [
         "Integrated <strong>AWS Cloud AI services</strong> and <strong>OpenAI</strong> APIs to automate course creation and content generation.",
         "Integrated <strong>AWS Polly</strong> for text-to-speech conversion and <strong>OpenAI</strong> for extracting transcripts, slides, and audio from video.",
         "Implements automation pipelines for content transformation and learning delivery."
       ]
     },
     {
+      "key": "security",
+      "title": "🛡️ Security & Authentication",
+      "details": [
+        "Integrated AWS Cognito to handle authentication requests.",
+        "Follows <strong>OWASP</strong> best practices to prevent security vulnerabilities: SQL Injection, XSS, and SSRF.",
+        "Performed regular <strong>Fortify</strong> scans and code reviews to maintain secure coding standards."
+      ]
+    },
+    {
       "key": "ai-and-automation-engineering",
-      "title": "AI & Machine Learning",
+      "title": "🧠 AI & Machine Learning",
       "details": [
         "Builds machine learning models using <strong>Python</strong> and <strong>Pandas</strong> for data-driven insights.",
         "Explores graph databases like Neo4j (Cypher, D3.js) for knowledge graph visualisation.",
@@ -65,7 +58,7 @@
     },
     {
       "key": "quality-and-testing",
-      "title": "Testing & Performance",
+      "title": "🧪 Testing & Performance",
       "details": [
         "Writes <strong>Playwright</strong> tests to simulate user journeys across end-to-end stack: <strong>React</strong>, <strong>Node.js</strong>, <strong>PostgreSQL</strong> database.",
         "Integrates <strong>Playwright</strong> tests with <strong>GitHub Actions</strong> CI/CD pipelines, ensuring all tests pass to maintain app stability and developer confidence.",
@@ -77,18 +70,20 @@
   "soft": [
     {
       "key": "leader",
-      "title": "Leader and Mentor",
+      "title": "🧭 Leader & Mentor",
       "details": [
         "Champions agile software development and ceremonies: daily stand-ups, retrospectives and demos to stakeholders.",
         "Manages backlog, refines roadmap and plans sprints to meet client expectations of feature delivery times.",
         "Fosters a psychologically safe, rewarding culture which encourages innovation and ownership.",
         "Encourages team growth by conducting code reviews, knowledge-sharing sessions and internal workshops.",
-        "Creates onboarding resources and technical documentation to assist developers."
+        "Creates onboarding resources and technical documentation to assist developers.",
+        "Oversees production deployments, prepares release notes and ensures system stability.",
+        "Delivers out-of-hours hotfixes and production environment support to maintain uptime and reliability."
       ]
     },
     {
       "key": "problem-solving-and-adaptability",
-      "title": "Solutionist",
+      "title": "🧩 Problem-Solver",
       "details": [
         "Responds rapidly to critical production issues, delivering hotfixes and restoring service stability.",
         "Balances evolving project priorities in dynamic, high-paced agile environments without compromising quality or deadlines.",
@@ -98,7 +93,7 @@
     },
     {
       "key": "strategic-vision-and-innovation",
-      "title": "Strategic Visionary and Innovator",
+      "title": "💡 Strategic Visionary & Innovator",
       "details": [
         "Identifies emerging technologies and assesses their potential to improve scalability, maintainability, and accessibility.",
         "Contributes to long-term technical roadmaps, ensuring architectural decisions align with organisational objectives.",
@@ -108,7 +103,7 @@
     },
     {
       "key": "communicator",
-      "title": "Communicator",
+      "title": "💬 Communicator",
       "details": [
         "Translates complex technical requirements into clear, actionable insights for non-technical stakeholders.",
         "Leads technical discussions in CivTech competitions, tenders and government projects.",

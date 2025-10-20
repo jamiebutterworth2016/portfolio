@@ -12,16 +12,38 @@ const FlexSm = styled(Flex)`
   gap: 8px;
 `;
 
+const FlexMd = styled(Flex)`
+  gap: 16px;
+`;
+
 const FlexSmAlignCenter = styled(FlexSm)`
   align-items: center;
+`;
+
+const FlexStart = styled(Flex)`
+  justify-content: start;
 `;
 
 const FlexEnd = styled(Flex)`
   justify-content: end;
 `;
 
+const FlexCenter = styled(Flex)`
+  justify-content: center;
+  align-items: center;
+`;
+
+const FlexBetween = styled(Flex)`
+  justify-content: space-between;
+  align-items: center;
+`;
+
 const FlexCol = styled(Flex)`
   flex-direction: column;
+`;
+
+const FlexColBetween = styled(FlexCol)`
+  justify-content: space-between;
 `;
 
 const FlexColSm = styled(FlexCol)`
@@ -63,17 +85,23 @@ const Colour = {
   lightOrange: `color-mix(in srgb, #ff6a00ff 50%, #ffffffff)`,
   lightYellow: `color-mix(in srgb, #eeff00ff 50%, #ffffffff)`,
   lightGreen: `color-mix(in srgb, #00ff04ff 50%, #ffffffff)`,
+  grey: `color-mix(in srgb, #000000ff 50%, #ffffffff)`,
 };
 
 export {
   Flex,
   FlexSm,
   FlexSmAlignCenter,
+  FlexMd,
+  FlexStart,
   FlexEnd,
+  FlexCenter,
+  FlexBetween,
   FlexCol,
   FlexColSm,
   FlexColMd,
   FlexColLg,
+  FlexColBetween,
   Divider,
   Card,
   Sizes,

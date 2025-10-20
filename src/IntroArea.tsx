@@ -5,7 +5,6 @@ import {
   Divider,
   FlexColSm,
   FlexSmAlignCenter,
-  FlexColLg,
 } from "./Shared";
 import SkillPyramid from "./SkillPyramid";
 import styled from "styled-components";
@@ -13,22 +12,25 @@ import styled from "styled-components";
 export default function IntroArea(): JSX.Element {
   return (
     <Card>
-      <FlexColLg>
+      <FlexColMd>
         <FlexColMd>
-          <p>
-            <strong>
-              👋 Hello, I'm Jamie, a lead engineer and full-stack developer with
-              9 years' software industry experience.
-            </strong>
-            <br />
-            Over my career, I developed many software projects and acquired a strong
-            technical skillset:
-          </p>
+          <FlexColSm>
+            <p>
+              <strong>
+                👋 Hello, I'm Jamie, a lead engineer and full-stack developer
+                with 9 years' software industry experience.
+              </strong>
+            </p>
+            <p>
+              Over my career, I developed many software projects and acquired a
+              strong technical skillset:
+            </p>
+          </FlexColSm>
           <SkillPyramid />
           <Divider />
         </FlexColMd>
 
-        <FlexColLg>
+        <FlexColMd>
           <FlexColSm>
             <p>
               <strong>
@@ -53,7 +55,6 @@ export default function IntroArea(): JSX.Element {
               assistive devices.
             </Bullet>
           </FlexColSm>
-
           <AchievementCard>
             <FlexColSm>
               <FlexSmAlignCenter>
@@ -69,8 +70,8 @@ export default function IntroArea(): JSX.Element {
               </p>
             </FlexColSm>
           </AchievementCard>
-        </FlexColLg>
-      </FlexColLg>
+        </FlexColMd>
+      </FlexColMd>
     </Card>
   );
 }

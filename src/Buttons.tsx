@@ -22,10 +22,16 @@ const Button = styled.button`
   &:focus {
     outline: 2px solid ${Colour.blue};
   }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    background: ${Colour.grey};
+  }
 `;
 
 interface SelectButtonProps {
-  selected?: boolean;
+  selected: boolean;
 }
 
 const TabButton = styled(Button)<SelectButtonProps>`
