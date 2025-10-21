@@ -8,9 +8,9 @@
         "Implements <strong>OWASP Top 10</strong> best practices to prevent SQL Injection, XSS, SSRF and CSRF attacks.",
         "Performs regular <strong>Fortify</strong> scans and code reviews to detect and fix security issues.",
         "Integrated <strong>AWS Cognito</strong> for user authentication and authorization, including sign-up flows and multi-factor authentication (MFA).",
-        "Implements secure <strong>JWT-based authentication</strong> between <strong>React</strong> frontends and <strong>Node.js</strong> backends with proper token validation and refresh logic.",
+        "Implements <strong>JWT-based authentication</strong> between <strong>React</strong> frontends and <strong>Node.js</strong> backends with token validation and refresh logic.",
         "Uses <strong>role-based access control (RBAC)</strong> to restrict user permissions based on roles and responsibilities.",
-        "Applies the <strong>Principle of Least Privilege (PoLP)</strong> across infrastructure and application layers."
+        "Applies the <strong>Principle of Least Privilege (PoLP)</strong>."
       ]
     },
     {
@@ -19,11 +19,10 @@
       "details": [
         "Builds modern, component-driven UIs with <strong>React</strong> and <strong>TypeScript</strong>.",
         "Creates reusable modular components to maintain a clean and efficient codebase.",
-        "Optimises performance using <strong>React Context</strong>, memoization and efficient state management.",
         "Applies consistent design with <strong>Styled Components</strong> and shared design tokens for colour, typography and spacing.",
         "Ensures responsive layouts with CSS media queries across all devices.",
         "Collaborates closely with designers in <strong>Figma</strong> for seamless design-to-code workflows.",
-        "Exceeds <strong>WCAG 2.2</strong> standards through inclusive design supporting neurodiverse and assistive-technology users."
+        "Exceeds <strong>WCAG 2.2</strong> standards through inclusive design, supporting neurodiverse and assistive-technology users."
       ]
     },
     {
@@ -31,7 +30,7 @@
       "title": "🏛️ Backend & Architecture",
       "details": [
         "Designs scalable, modular architectures using <strong>Node.js</strong>, <strong>React</strong> and <strong>PostgreSQL</strong>.",
-        "Builds <strong>RESTful APIs</strong> with Express to manage data flow and backend logic.",
+        "Builds <strong>RESTful APIs</strong> with Express to handle data requests and backend logic.",
         "Implements <strong>Node.js background workers</strong> consuming <strong>AWS SQS queues</strong> for AI content generation and in-app notifications.",
         "Documents architecture diagrams to clarify component interactions and data flow.",
         "Applies proven design principles and patterns to ensure maintainable and testable code."
@@ -41,34 +40,33 @@
       "key": "devops",
       "title": "☁️ Cloud DevOps & AI Services",
       "details": [
-        "Deploys and manages infrastructure using <strong>AWS</strong> and <strong>Terraform</strong>.",
+        "Deploys <strong>AWS cloud infrastructure</strong> with <strong>Terraform</strong> code-to-infrastrucure implementation.",
         "Builds CI/CD pipelines with <strong>GitHub Actions</strong> for automated, multi-environment deployments.",
-        "Manages AWS services including CloudFront, Elastic Beanstalk, ECS and RDS.",
+        "Manages AWS infrastructure components, including CloudFront, Elastic Beanstalk, ECS and RDS.",
         "Uses <strong>Docker</strong> for containerised microservices to ensure consistent environments.",
         "Integrates <strong>AWS Cloud AI services</strong> and <strong>OpenAI APIs</strong> to automate course creation and content generation.",
-        "Uses <strong>AWS Polly</strong> for text-to-speech and <strong>OpenAI</strong> models for transcript, slide and audio extraction.",
-        "Automates content transformation pipelines for scalable learning delivery."
+        "Uses <strong>AWS Polly</strong> for text-to-speech and <strong>OpenAI</strong> models for transcript, slide and audio extraction."
       ]
     },
     {
       "key": "ai_ml",
-      "title": "🤖 AI & Machine Learning",
+      "title": "🤖 Data Science & Machine Learning",
       "details": [
         "Builds <strong>machine learning models</strong> with <strong>Python</strong> and <strong>Pandas</strong> to generate data-driven insights.",
         "Developed a model to identify learning preferences by clustering behavioural and performance data for personalised learning.",
-        "Explores <strong>Neo4j</strong> graph databases with <strong>Cypher</strong> and <strong>D3.js</strong> for knowledge graph visualisation and learner-content mapping."
+        "Explores <strong>Neo4j</strong> graph databases with <strong>Cypher</strong> and <strong>D3.js</strong> for knowledge graph visualisation."
       ]
     },
     {
       "key": "testing_performance",
       "title": "🧪 Testing & Performance",
       "details": [
-        "Treats testing and performance as core to development, ensuring quality and stability before deployment.",
-        "Writes <strong>Playwright</strong> tests to simulate key user journeys across <strong>React</strong>, <strong>Node.js</strong> and <strong>PostgreSQL</strong>.",
+        "Treats testing and performance as core to development, ensuring software quality and stability.",
+        "Writes end-to-end <strong>Playwright</strong> tests to simulate key user journeys across <strong>React</strong>, <strong>Node.js</strong> and <strong>PostgreSQL</strong>.",
         "Integrates <strong>Playwright</strong> into <strong>GitHub Actions</strong> CI/CD pipelines, gating production deployments on test success.",
-        "Writes <strong>Jest</strong> unit tests for backend services to ensure correctness and maintainability.",
+        "Writes <strong>Jest</strong> unit tests for backend services to ensure quality, bug-free functionality.",
         "Optimises frontend performance using <strong>React Context</strong>, memoization and efficient data fetching.",
-        "Improves <strong>PostgreSQL</strong> query speed with well-chosen indexes for frequently accessed data."
+        "Improves <strong>PostgreSQL</strong> query speed with indexes for frequently accessed data."
       ]
     }
   ],
