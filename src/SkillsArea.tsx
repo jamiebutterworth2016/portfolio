@@ -53,7 +53,9 @@ export default function SkillsArea() {
     <Container>
       <Card>
         <FlexColLg>
-          <p>Click a skill to find out more:</p>
+          <p>
+            <strong>Click a skill to find out more:</strong>
+          </p>
           <FlexColMd>
             <h3>⚙️ Technical Skills</h3>
             <SkillsRow>
