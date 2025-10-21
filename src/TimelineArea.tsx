@@ -82,7 +82,7 @@ export default function TimelineArea(): JSX.Element {
           },
           {
             year: `2006 - 2008`,
-            text: `GCSEs: Maths (A); English Language (A); English Literature (A); French (B); History (B); Physics (B); Biology (B); Chemistry (C); and Latin (C).`,
+            text: `GCSEs: Maths (A); English Language (A); English Literature (A); French (B); History (B); Physics (B); Biology (B); Chemistry (C); Latin (C).`,
           },
         ]}
       />
