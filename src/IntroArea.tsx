@@ -35,7 +35,7 @@ export default function IntroArea(): JSX.Element {
             <p>
               <strong>
                 Since 2022, I've developed a web-based accessible learning
-                platform: Neve Learning.
+                platform: <a href="https://www.nevelearning.co.uk/" target="_blank">Neve Learning.</a>
               </strong>
               <br />
             </p>
