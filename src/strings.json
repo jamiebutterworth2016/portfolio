@@ -75,11 +75,11 @@
       "key": "leader",
       "title": "🧭 Leader & Mentor",
       "details": [
-        "Leads development teams with technical guidance and people-focused mentorship, ensuring delivery of high-quality features on time.",
-        "Champions agile ceremonies including stand-ups, retrospectives and demos to keep teams aligned and clients informed.",
-        "Drives roadmap planning and sprint prioritisation, translating strategic goals into actionable plans.",
-        "Leads by example in complex feature development and deployments, setting performance and quality standards.",
-        "Fosters a psychologically safe and rewarding culture that encourages innovation, accountability and learning.",
+        "Leads development teams with technical guidance and people-focused mentorship.",
+        "Champions agile ceremonies: stand-ups, retrospectives and demos.",
+        "Plans roadmaps and sprints to organise and delegate work.",
+        "Leads by example in complex feature development and deployments.",
+        "Fosters a psychologically safe and rewarding culture to encourage innovation and ownership.",
         "Mentors developers via code reviews, workshops and documentation to improve team capability and consistency."
       ]
     },
