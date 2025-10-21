@@ -49,24 +49,24 @@
       ]
     },
     {
+      "key": "testing_performance",
+      "title": "🧪 Testing & Performance",
+      "details": [
+        "Prioritises testing and performance as core to development, ensuring software quality and stability.",
+        "Writes end-to-end <strong>Playwright</strong> tests to simulate key user journeys across <strong>React</strong>, <strong>Node.js</strong> and <strong>PostgreSQL</strong>.",
+        "Integrates <strong>Playwright</strong> into <strong>GitHub Actions</strong> CI/CD pipelines, gating deployments on test success.",
+        "Writes <strong>Jest</strong> unit tests to ensure bug-free functionality.",
+        "Optimises frontend performance using <strong>React Context</strong>, memoization and efficient data fetching and state management.",
+        "Improves <strong>PostgreSQL</strong> database query speed with indexes for frequently accessed data."
+      ]
+    },
+    {
       "key": "ai_ml",
       "title": "🤖 Data Science & Machine Learning",
       "details": [
         "Builds <strong>machine learning models</strong> with <strong>Python</strong> and <strong>Pandas</strong> to generate data-driven insights.",
-        "Developed a model to identify learning preferences by clustering behavioural and performance data for personalised learning.",
+        "Built a model to identify learning preferences by clustering behavioural and performance data for personalised learning.",
         "Explores <strong>Neo4j</strong> graph databases with <strong>Cypher</strong> and <strong>D3.js</strong> for knowledge graph visualisation."
-      ]
-    },
-    {
-      "key": "testing_performance",
-      "title": "🧪 Testing & Performance",
-      "details": [
-        "Treats testing and performance as core to development, ensuring software quality and stability.",
-        "Writes end-to-end <strong>Playwright</strong> tests to simulate key user journeys across <strong>React</strong>, <strong>Node.js</strong> and <strong>PostgreSQL</strong>.",
-        "Integrates <strong>Playwright</strong> into <strong>GitHub Actions</strong> CI/CD pipelines, gating production deployments on test success.",
-        "Writes <strong>Jest</strong> unit tests for backend services to ensure quality, bug-free functionality.",
-        "Optimises frontend performance using <strong>React Context</strong>, memoization and efficient data fetching.",
-        "Improves <strong>PostgreSQL</strong> query speed with indexes for frequently accessed data."
       ]
     }
   ],
@@ -75,7 +75,7 @@
       "key": "leader",
       "title": "🧭 Leader & Mentor",
       "details": [
-        "Leads development teams with a balance of technical guidance and people-focused mentorship, ensuring delivery of high-quality features on time.",
+        "Leads development teams with technical guidance and people-focused mentorship, ensuring delivery of high-quality features on time.",
         "Champions agile ceremonies including stand-ups, retrospectives and demos to keep teams aligned and clients informed.",
         "Drives roadmap planning and sprint prioritisation, translating strategic goals into actionable plans.",
         "Leads by example in complex feature development and deployments, setting performance and quality standards.",
