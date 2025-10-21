@@ -51,7 +51,7 @@ export default function IntroArea(): JSX.Element {
               👁️ Visual impairments: blindness, low vision, colour blindness.
             </Bullet>
             <Bullet>
-              🦾 Motor impairments: limited hand mobility, tremors, or use of
+              🦾 Motor impairments: limited hand mobility, tremors, use of
               assistive devices.
             </Bullet>
           </FlexColSm>

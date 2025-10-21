@@ -7,8 +7,8 @@
         "Applies a <strong>security-first mindset</strong>, ensuring code does not introduce vulnerabilities.",
         "Implements <strong>OWASP Top 10</strong> best practices to prevent SQL Injection, XSS, SSRF and CSRF attacks.",
         "Performs regular <strong>Fortify</strong> scans and code reviews to detect and fix security issues.",
-        "Integrated <strong>AWS Cognito</strong> for user authentication and authorization, including sign-up flows and multi-factor authentication (MFA).",
-        "Implements <strong>JWT-based authentication</strong> between <strong>React</strong> frontends and <strong>Node.js</strong> backends with token validation and refresh logic.",
+        "Integrated <strong>AWS Cognito</strong> for user authentication and authorization, sign-up flows and multi-factor authentication (MFA).",
+        "Implements <strong>JWT-based authentication</strong> between <strong>React</strong> frontend and <strong>Node.js</strong> backend with token validation and refresh.",
         "Uses <strong>role-based access control (RBAC)</strong> to restrict user permissions based on roles and responsibilities.",
         "Applies the <strong>Principle of Least Privilege (PoLP)</strong>."
       ]
