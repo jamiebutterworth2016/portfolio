@@ -40,12 +40,12 @@
       "key": "devops",
       "title": "☁️ Cloud DevOps & AI Services",
       "details": [
-        "Deploys <strong>AWS cloud infrastructure</strong> with <strong>Terraform</strong> code-to-infrastrucure implementation.",
+        "Deploys <strong>AWS cloud infrastructure</strong> with <strong>Terraform</strong> code-to-infrastructure implementation.",
         "Builds CI/CD pipelines with <strong>GitHub Actions</strong> for automated, multi-environment deployments.",
         "Manages AWS infrastructure components, including CloudFront, Elastic Beanstalk, ECS and RDS.",
         "Uses <strong>Docker</strong> for containerised microservices to ensure consistent environments.",
-        "Integrates <strong>AWS Cloud AI services</strong> and <strong>OpenAI APIs</strong> to automate course creation and content generation.",
-        "Uses <strong>AWS Polly</strong> for text-to-speech and <strong>OpenAI</strong> models for transcript, slide and audio extraction."
+        "Integrates <strong>AWS cloud AI services</strong> and <strong>OpenAI APIs</strong> to automate course creation and content generation.",
+        "Integrated <strong>AWS Polly</strong> for text-to-speech and <strong>OpenAI</strong> for video-to-text transcriptions."
       ]
     },
     {
