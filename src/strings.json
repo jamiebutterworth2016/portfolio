@@ -88,7 +88,7 @@
       "title": "🧩 Strategist & Problem Solver",
       "details": [
         "Thinks strategically about software design, aligning technical decisions with long-term business goals.",
-        "Efficient under tight deadlines and low-resource environments, delivering complex, high-impact solutions quickly.",
+        "Delivers complex, high-impact solutions efficiently under tight deadlines and low-resource environments.",
         "Responds rapidly to production issues, restoring stability while addressing root causes.",
         "Makes informed, timely decisions, prioritising high-impact work and taking ownership of outcomes.",
         "Identifies risks proactively and implements mitigations."
@@ -98,32 +98,23 @@
       "key": "innovation",
       "title": "💡 Innovator",
       "details": [
-        "Proactively improves software beyond formal requirements, enhancing performance, usability and developer efficiency.",
-        "Contributes original solutions in planning and design discussions, shaping product direction creatively.",
+        "Contributes original ideas in planning and design discussions, shaping product direction creatively.",
         "Stays informed on emerging technologies and trends, integrating relevant tools to modernise the tech stack.",
-        "Leads proof-of-concept initiatives to test innovative approaches before full adoption.",
+        "Leads proof-of-concept initiatives to test innovative approaches.",
         "Encourages team experimentation and critical thinking to deliver smarter, more resilient software."
       ]
     },
     {
-      "key": "communicator",
-      "title": "💬 Communicator",
-      "details": [
-        "Explains complex technical concepts clearly to both technical and non-technical stakeholders.",
-        "Engages professionally with internal teams and external partners, providing timely responses.",
-        "Leads discussions in technical meetings and projects, ensuring all voices are heard and considered.",
-        "Practices active listening and collaborative decision-making to choose the best path forward.",
-        "Promotes transparency through thorough documentation of processes, pipelines and architectural decisions."
-      ]
-    },
-    {
-      "key": "collaboration",
-      "title": "🤝 Collaboration & Teamwork",
+      "key": "teamwork",
+      "title": "🤝 Teamwork & Communication",
       "details": [
         "Works effectively with cross-functional teams to deliver cohesive software solutions.",
-        "Facilitates knowledge-sharing and encourages diverse perspectives to reach optimal decisions.",
-        "Resolves conflicts constructively, maintaining team harmony and project progress.",
-        "Builds trust and rapport across teams through transparency, reliability and engagement."
+        "Explains complex technical concepts clearly to both technical and non-technical stakeholders.",
+        "Engages professionally with internal and external teams, providing timely responses.",
+        "Considers everyone's input before directing the team with collaborative decision-making.",
+        "Promotes transparency through thorough documentation of processes, pipelines and architectural decisions.",
+        "Builds trust and rapport across teams through transparency, reliability and engagement.",
+        "Resolves conflicts constructively, maintaining team harmony and project progress."
       ]
     },
     {
