@@ -10,15 +10,16 @@ import {
   Colour,
   FlexCol,
 } from "./Shared";
+import React, { type JSX } from "react";
+import { Button, TabButton } from "./Buttons";
 import IntroArea from "./IntroArea";
 import SkillsArea from "./SkillsArea";
-import React, { type JSX } from "react";
+import CertificatesArea from "./CertificatesArea";
 import TimelineArea from "./TimelineArea";
-import { Button, TabButton } from "./Buttons";
 
 function App() {
   const [activeTab, setActiveTab] = React.useState<
-    "intro" | "skills" | "timeline"
+    "intro" | "skills" | "certificates" | "timeline"
   >("intro");
 
   return (
@@ -43,6 +44,12 @@ function App() {
             Skills
           </TabButton>
           <TabButton
+            selected={activeTab === "certificates"}
+            onClick={() => setActiveTab("certificates")}
+          >
+            Certificates
+          </TabButton>
+          <TabButton
             selected={activeTab === "timeline"}
             onClick={() => setActiveTab("timeline")}
           >
@@ -65,6 +72,16 @@ function App() {
         <Content
           heading={"Skills"}
           area={<SkillsArea />}
+          nextTitle="View my certificates"
+          nextClick={() => {
+            setActiveTab("certificates");
+          }}
+        />
+      )}
+      {activeTab === "certificates" && (
+        <Content
+          heading={"Certificates"}
+          area={<CertificatesArea />}
           nextTitle="View my employment timeline"
           nextClick={() => {
             setActiveTab("timeline");

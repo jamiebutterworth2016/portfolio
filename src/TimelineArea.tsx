@@ -8,6 +8,7 @@ import NationalEPCCompanyLogo from "./images/NationalEPCCompanyLogo.jfif";
 import DLNRCRCLogo from "./images/DLNRCRCLogo.jpeg";
 import type { JSX } from "react";
 import styled from "styled-components";
+import Image from "./Image";
 
 export default function TimelineArea(): JSX.Element {
   return (
@@ -107,9 +108,7 @@ function Item({ headline, date, texts, imageSrc }: RowProps): JSX.Element {
           <p>{date}</p>
         </FlexColSm>
         {imageSrc && (
-          <Image>
-            <img src={imageSrc} width={"72px"} />
-          </Image>
+          <Image src={imageSrc} width={72} borderColour="rgba(0, 0, 0, 0.1)" />
         )}
       </HeadlineRow>
       {texts.length > 0 && (
@@ -142,15 +141,4 @@ type Text = {
 
 const HeadlineRow = styled(Flex)`
   justify-content: space-between;
-`;
-
-const Image = styled(Flex)`
-  justify-content: center;
-  min-width: 100px;
-  max-width: 100px;
-  height: 100%;
-  width: 100%;
-
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
 `;

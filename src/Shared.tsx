@@ -8,6 +8,10 @@ const Flex = styled.div`
   display: flex;
 `;
 
+const FlexXs = styled(Flex)`
+  gap: 4px;
+`;
+
 const FlexSm = styled(Flex)`
   gap: 8px;
 `;
@@ -90,6 +94,7 @@ const Colour = {
 
 export {
   Flex,
+  FlexXs,
   FlexSm,
   FlexSmAlignCenter,
   FlexMd,
