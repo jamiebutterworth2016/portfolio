@@ -1,19 +1,20 @@
 import type { JSX } from "react";
 import { FlexColMd, FlexXs } from "./Shared";
 import Image from "./Image";
-import CSharpBasics from "./images/certs/c_sharp_basics.jpg";
+import CSharp from "./images/certs/c_sharp_beginner.jpg";
+import Java from "./images/certs/java_beginner.jpg";
+import React from "./images/certs/react_advanced.jpg";
+import Angular from "./images/certs/angular.jpg";
 import Docker from "./images/certs/docker.jpg";
 import GraphQL from "./images/certs/graphql_react.jpg";
 import Neo4j from "./images/certs/neo4j.jpg";
-import React from "./images/certs/react_advanced.jpg";
-import Angular from "./images/certs/angular.jpg";
 
 export default function CertificatesArea(): JSX.Element {
   const width = 350;
   const height = 270;
 
   return (
-    <FlexColMd style={{ maxWidth: "1200px" }}>
+    <FlexColMd>
       <FlexColMd>
         <h3>Advanced</h3>
         <FlexXs style={{ flexWrap: "wrap", minHeight: `${height}px` }}>
@@ -30,11 +31,8 @@ export default function CertificatesArea(): JSX.Element {
       <FlexColMd>
         <h3>Beginner</h3>
         <FlexXs style={{ flexWrap: "wrap", minHeight: `${height}px` }}>
-          <Image
-            src={CSharpBasics}
-            width={width}
-            borderColour={metallic.bronze}
-          />
+          <Image src={CSharp} width={width} borderColour={metallic.bronze} />
+          <Image src={Java} width={width} borderColour={metallic.bronze} />
           <Image src={Docker} width={width} borderColour={metallic.bronze} />
           <Image src={Neo4j} width={width} borderColour={metallic.bronze} />
         </FlexXs>

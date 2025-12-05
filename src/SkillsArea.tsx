@@ -4,7 +4,6 @@ import {
   FlexColLg,
   FlexSm,
   Card,
-  FlexMd,
   FlexColMd,
   Divider,
   Colour,
@@ -50,7 +49,7 @@ export default function SkillsArea() {
   }
 
   return (
-    <Container>
+    <>
       <Card>
         <FlexColLg>
           <p>
@@ -97,13 +96,9 @@ export default function SkillsArea() {
           setSelectedSkill={setSelectedSkill}
         />
       )}
-    </Container>
+    </>
   );
 }
-
-const Container = styled(FlexMd)`
-  flex-wrap: wrap;
-`;
 
 const SkillsRow = styled(FlexSm)`
   flex-wrap: wrap;
