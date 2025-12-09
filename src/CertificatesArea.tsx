@@ -1,5 +1,5 @@
 import type { JSX } from "react";
-import { FlexColMd, FlexXs } from "./Shared";
+import { FlexColMd, FlexColRg, FlexXs } from "./Shared";
 import Image from "./Image";
 import CSharp from "./images/certs/c_sharp_beginner.jpg";
 import Java from "./images/certs/java_beginner.jpg";
@@ -15,31 +15,66 @@ export default function CertificatesArea(): JSX.Element {
   const height = 270;
 
   return (
-    <FlexColMd>
+    <FlexColRg>
       <FlexColMd>
-        <h3>Advanced</h3>
+        <h3>Languages & Frameworks</h3>
         <FlexXs style={{ flexWrap: "wrap", minHeight: `${height}px` }}>
-          <Image src={React} width={width} borderColour={metallic.gold} />
+          <Image
+            src={React}
+            width={width}
+            borderColour={metallic.gold}
+            label="Advanced"
+          />
+          <Image
+            src={Angular}
+            width={width}
+            borderColour={metallic.silver}
+            label="Intermediate"
+          />
+          <Image
+            src={CSharp}
+            width={width}
+            borderColour={metallic.bronze}
+            label="Beginner"
+          />
+          <Image
+            src={Java}
+            width={width}
+            borderColour={metallic.bronze}
+            label="Beginner"
+          />
         </FlexXs>
       </FlexColMd>
       <FlexColMd>
-        <h3>Intermediate</h3>
+        <h3>Other</h3>
         <FlexXs style={{ flexWrap: "wrap", minHeight: `${height}px` }}>
-          <Image src={Angular} width={width} borderColour={metallic.silver} />
-          <Image src={GraphQL} width={width} borderColour={metallic.silver} />
-          <Image src={SystemDesign} width={width} borderColour={metallic.silver} />
+          <Image
+            src={GraphQL}
+            width={width}
+            borderColour={metallic.silver}
+            label="Intermediate"
+          />
+          <Image
+            src={SystemDesign}
+            width={width}
+            borderColour={metallic.silver}
+            label="Intermediate"
+          />
+          <Image
+            src={Docker}
+            width={width}
+            borderColour={metallic.bronze}
+            label="Beginner"
+          />
+          <Image
+            src={Neo4j}
+            width={width}
+            borderColour={metallic.bronze}
+            label="Beginner"
+          />
         </FlexXs>
       </FlexColMd>
-      <FlexColMd>
-        <h3>Beginner</h3>
-        <FlexXs style={{ flexWrap: "wrap", minHeight: `${height}px` }}>
-          <Image src={CSharp} width={width} borderColour={metallic.bronze} />
-          <Image src={Java} width={width} borderColour={metallic.bronze} />
-          <Image src={Docker} width={width} borderColour={metallic.bronze} />
-          <Image src={Neo4j} width={width} borderColour={metallic.bronze} />
-        </FlexXs>
-      </FlexColMd>
-    </FlexColMd>
+    </FlexColRg>
   );
 }
 

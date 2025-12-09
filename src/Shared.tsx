@@ -58,6 +58,10 @@ const FlexColMd = styled(FlexCol)`
   gap: 16px;
 `;
 
+const FlexColRg = styled(FlexCol)`
+  gap: 24px;
+`;
+
 const FlexColLg = styled(FlexCol)`
   gap: 32px;
 `;
@@ -105,6 +109,7 @@ export {
   FlexCol,
   FlexColSm,
   FlexColMd,
+  FlexColRg,
   FlexColLg,
   FlexColBetween,
   Divider,
