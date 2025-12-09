@@ -5,6 +5,7 @@ import {
   Divider,
   FlexColSm,
   FlexSmAlignCenter,
+  FlexMd,
 } from "./Shared";
 import SkillPyramid from "./SkillPyramid";
 import styled from "styled-components";
@@ -12,7 +13,7 @@ import SkillsArea from "./SkillsArea";
 
 export default function IntroArea(): JSX.Element {
   return (
-    <FlexColMd>
+    <FlexMd style={{ flexWrap: "wrap" }}>
       <Card>
         <FlexColMd>
           <FlexColMd>
@@ -36,8 +37,7 @@ export default function IntroArea(): JSX.Element {
             <FlexColSm>
               <p>
                 <strong>
-                  Since 2022, I developed the accessible learning
-                  platform:{" "}
+                  Since 2022, I developed the accessible learning platform:{" "}
                   <a href="https://www.nevelearning.co.uk/" target="_blank">
                     Neve Learning.
                   </a>
@@ -49,8 +49,7 @@ export default function IntroArea(): JSX.Element {
                 experience for students with:
               </p>
               <Bullet>
-                🧠 Neurodiverse conditions: ADHD, Autism, Dyslexia,
-                etc.
+                🧠 Neurodiverse conditions: ADHD, Autism, Dyslexia, etc.
               </Bullet>
               <Bullet>
                 👁️ Visual impairments: blindness, low vision, colour blindness.
@@ -81,7 +80,7 @@ export default function IntroArea(): JSX.Element {
       </Card>
 
       <SkillsArea />
-    </FlexColMd>
+    </FlexMd>
   );
 }
 

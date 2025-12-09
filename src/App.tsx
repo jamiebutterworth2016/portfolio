@@ -18,7 +18,7 @@ import TimelineArea from "./TimelineArea";
 
 function App() {
   const [activeTab, setActiveTab] = React.useState<
-    "intro" | "certificates" | "timeline"
+    "intro" | "certificates" | "employers"
   >("intro");
 
   return (
@@ -43,8 +43,8 @@ function App() {
             Certificates
           </TabButton>
           <TabButton
-            selected={activeTab === "timeline"}
-            onClick={() => setActiveTab("timeline")}
+            selected={activeTab === "employers"}
+            onClick={() => setActiveTab("employers")}
           >
             Employers
           </TabButton>
@@ -65,13 +65,13 @@ function App() {
         <Content
           heading={"Certificates"}
           area={<CertificatesArea />}
-          nextTitle="View my Employers"
+          nextTitle="View my employers"
           nextClick={() => {
-            setActiveTab("timeline");
+            setActiveTab("employers");
           }}
         />
       )}
-      {activeTab === "timeline" && (
+      {activeTab === "employers" && (
         <Content heading={"Employers"} area={<TimelineArea />} />
       )}
     </Container>
