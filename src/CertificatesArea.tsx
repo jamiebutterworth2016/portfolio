@@ -8,6 +8,7 @@ import Angular from "./images/certs/angular.jpg";
 import Docker from "./images/certs/docker.jpg";
 import GraphQL from "./images/certs/graphql_react.jpg";
 import Neo4j from "./images/certs/neo4j.jpg";
+import SystemDesign from "./images/certs/system_design.jpg";
 
 export default function CertificatesArea(): JSX.Element {
   const width = 350;
@@ -26,6 +27,7 @@ export default function CertificatesArea(): JSX.Element {
         <FlexXs style={{ flexWrap: "wrap", minHeight: `${height}px` }}>
           <Image src={Angular} width={width} borderColour={metallic.silver} />
           <Image src={GraphQL} width={width} borderColour={metallic.silver} />
+          <Image src={SystemDesign} width={width} borderColour={metallic.silver} />
         </FlexXs>
       </FlexColMd>
       <FlexColMd>

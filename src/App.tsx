@@ -46,7 +46,7 @@ function App() {
             selected={activeTab === "timeline"}
             onClick={() => setActiveTab("timeline")}
           >
-            Employment Timeline
+            Employers
           </TabButton>
         </TabsRow>
       </FlexColSm>
@@ -65,14 +65,14 @@ function App() {
         <Content
           heading={"Certificates"}
           area={<CertificatesArea />}
-          nextTitle="View my employment timeline"
+          nextTitle="View my Employers"
           nextClick={() => {
             setActiveTab("timeline");
           }}
         />
       )}
       {activeTab === "timeline" && (
-        <Content heading={"Employment Timeline"} area={<TimelineArea />} />
+        <Content heading={"Employers"} area={<TimelineArea />} />
       )}
     </Container>
   );

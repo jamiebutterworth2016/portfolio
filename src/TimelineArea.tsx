@@ -74,7 +74,7 @@ export default function TimelineArea(): JSX.Element {
       />
       <Item
         headline="King's School, Macclesfield"
-        date="2008 - 2010"
+        date="2006 - 2010"
         imageSrc={KingsSchoolLogo}
         texts={[
           {
