@@ -1,8 +1,19 @@
 {
   "tech": [
     {
+      "key": "backend",
+      "title": "🧱 System Design",
+      "details": [
+        "Designs scalable, modular architectures using <strong>Node.js</strong>, <strong>React</strong> and <strong>PostgreSQL</strong>.",
+        "Develops <strong>RESTful APIs</strong> with <strong>Express</strong> to handle data requests and backend logic.",
+        "Builds <strong>Node.js background workers</strong> to consume <strong>AWS SQS queues</strong> for AI content generation and notifications.",
+        "Documents architecture diagrams to clarify component interactions and data flow.",
+        "Applies proven design principles and patterns to ensure maintainable and testable code."
+      ]
+    },
+    {
       "key": "security",
-      "title": "🛡️ Security & Authentication",
+      "title": "🛡️ Security",
       "details": [
         "Applies a <strong>security-first mindset</strong> and the <strong>Principle of Least Privilege (PoLP)</strong>.",
         "Implements <strong>OWASP Top 10</strong> best practices to prevent SQL Injection, XSS, SSRF and CSRF attacks.",
@@ -14,7 +25,7 @@
     },
     {
       "key": "frontend",
-      "title": "🎨 Frontend, Design & Accessibility",
+      "title": "🎨 UI/UX, Design & Accessibility",
       "details": [
         "Builds modern, component-driven UIs with <strong>React</strong> and <strong>TypeScript</strong>.",
         "Creates reusable modular components to maintain a clean and efficient codebase.",
@@ -25,19 +36,8 @@
       ]
     },
     {
-      "key": "backend",
-      "title": "🏛️ Backend & Architecture",
-      "details": [
-        "Designs scalable, modular architectures using <strong>Node.js</strong>, <strong>React</strong> and <strong>PostgreSQL</strong>.",
-        "Develops <strong>RESTful APIs</strong> with <strong>Express</strong> to handle data requests and backend logic.",
-        "Builds <strong>Node.js background workers</strong> to consume <strong>AWS SQS queues</strong> for AI content generation and notifications.",
-        "Documents architecture diagrams to clarify component interactions and data flow.",
-        "Applies proven design principles and patterns to ensure maintainable and testable code."
-      ]
-    },
-    {
       "key": "devops",
-      "title": "☁️ Cloud DevOps, AI & Integrations",
+      "title": "☁️ Cloud DevOps & AI Integration",
       "details": [
         "Deploys <strong>AWS cloud infrastructure</strong> with <strong>Terraform</strong> code-to-infrastructure implementation.",
         "Builds <strong>CI/CD pipelines</strong> with <strong>GitHub Actions</strong> for automated, multi-environment deployments.",
@@ -50,7 +50,7 @@
     },
     {
       "key": "testing_performance",
-      "title": "🧪 Testing & Performance",
+      "title": "🧪 Testing",
       "details": [
         "Champions testing and performance, ensuring software responsiveness and stability.",
         "Writes end-to-end <strong>Playwright</strong> tests to simulate key user journeys across <strong>React</strong>, <strong>Node.js</strong> and <strong>PostgreSQL</strong>.",
@@ -62,7 +62,7 @@
     },
     {
       "key": "ai_ml",
-      "title": "🤖 Data Science & Machine Learning",
+      "title": "🤖 Machine Learning",
       "details": [
         "Builds <strong>machine learning models</strong> with <strong>Python</strong> and <strong>Pandas</strong> to generate data-driven insights.",
         "Built a model to identify learning preferences by clustering behavioural and performance data for personalised learning.",

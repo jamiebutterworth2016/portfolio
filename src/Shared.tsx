@@ -70,7 +70,6 @@ const Divider = styled.hr`
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin: 0;
-  max-width: ${Sizes.maxWidth};
 `;
 
 const Card = styled(FlexColMd)`

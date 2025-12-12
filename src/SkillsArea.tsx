@@ -1,9 +1,7 @@
 import React from "react";
 import data from "./strings.json";
 import {
-  FlexColLg,
   FlexSm,
-  Card,
   FlexColMd,
   Divider,
   Colour,
@@ -14,7 +12,7 @@ import {
   FlexStart,
 } from "./Shared";
 import styled from "styled-components";
-import { TechSkillButton, SoftSkillButton, Button } from "./Buttons";
+import { TechSkillButton, SoftSkillButton, Button } from "./components/Buttons";
 
 type Category = {
   key: string;
@@ -50,13 +48,11 @@ export default function SkillsArea() {
 
   return (
     <>
-      <Card>
-        <FlexColLg>
-          <p>
-            <strong>Click a skill to find out more:</strong>
-          </p>
+      <>
+        <FlexColMd>
+          <p>Click a skill to find out more:</p>
           <FlexColMd>
-            <h3>⚙️ Technical Skills</h3>
+            <h3>Technical Skills</h3>
             <SkillsRow>
               {tech.map((c, i) => (
                 <TechSkillButton
@@ -71,7 +67,7 @@ export default function SkillsArea() {
           </FlexColMd>
 
           <FlexColMd>
-            <h3>🤝 Soft Skills</h3>
+            <h3>Soft Skills</h3>
             <SkillsRow>
               {soft.map((c, i) => (
                 <SoftSkillButton
@@ -84,8 +80,8 @@ export default function SkillsArea() {
               ))}
             </SkillsRow>
           </FlexColMd>
-        </FlexColLg>
-      </Card>
+        </FlexColMd>
+      </>
 
       {selectedSkill && (
         <SkillModal

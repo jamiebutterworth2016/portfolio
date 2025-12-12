@@ -1,49 +1,57 @@
 import styled from "styled-components";
-import { Colour, Flex, FlexColSm } from "./Shared";
+import { Colour, FlexColMd, FlexMd, FlexSm } from "./Shared";
 
 const SkillPyramid = () => {
   const pyramidLevels: string[][] = [
-    ["C#", "TypeScript", "JavaScript", "HTML/CSS"], // top
-    ["React", "Node.js", "ASP.NET", "Playwright"], // middle
-    ["PostgreSQL", "SQL Server", "GCP", "AWS DevOps", "Terraform"], // bottom
+    ["TypeScript", "JavaScript", "C#", "Java", "HTML", "CSS", "SQL"],
+    ["React", "Node.js", ".NET", "Spring Boot", "Playwright"],
+    ["PostgreSQL", "SQL Server", "MongoDB", "RabbitMQ", "AWS SQS"],
+    ["AWS", "GCP", "Terraform"],
   ];
 
-  const backgrounds = [
-    Colour.lightGreen,
-    Colour.lightYellow,
-    Colour.lightOrange,
+  const layerLabels = ["Languages", "Frameworks", "Data", "DevOps"];
+  const layerColors = [
+    "#2f9e44", // green
+    "#f1e340ff", // red
+    "#fa8c16", // orange
+    "#3ebef0ff", // blue
   ];
 
   return (
-    <PyramidContainer>
+    <Container>
       {pyramidLevels.map((level, index) => (
-        <Level
-          key={index}
-          $widthPercent={25 + index * 25} // narrower at top, wider at bottom
-          $background={backgrounds[index]}
-        >
-          {level.map((skill) => (
-            <SkillBadge key={skill}>{skill}</SkillBadge>
-          ))}
-        </Level>
+        <Row key={index}>
+          <Label>{layerLabels[index]}</Label>
+          <List $background={layerColors[index]}>
+            {level.map((skill) => (
+              <SkillBadge key={skill}>{skill}</SkillBadge>
+            ))}
+          </List>
+        </Row>
       ))}
-    </PyramidContainer>
+    </Container>
   );
 };
 
 export default SkillPyramid;
 
-const Level = styled(Flex)<{ $widthPercent: number; $background: string }>`
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
-
-  width: ${({ $widthPercent }) => $widthPercent}%;
-  background: ${({ $background }) => $background};
-
-  padding: 0.5rem;
+const Row = styled(FlexMd)`
+  align-items: center;
+  border: 1px solid black;
   border-radius: 0.5rem;
-  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+`;
+
+const Label = styled.div`
+  min-width: 100px;
+  text-align: right;
+  font-weight: bold;
+`;
+
+const List = styled(FlexSm)<{ $background: string }>`
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  background: ${({ $background }) => $background};
 `;
 
 const SkillBadge = styled.span`
@@ -52,6 +60,6 @@ const SkillBadge = styled.span`
   border-radius: 0.25rem;
 `;
 
-const PyramidContainer = styled(FlexColSm)`
-  align-items: center;
+const Container = styled(FlexColMd)`
+  align-items: flex-start; // align left to leave space for labels
 `;

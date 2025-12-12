@@ -1,6 +1,6 @@
 import type { JSX } from "react";
-import { FlexColMd, FlexColRg, FlexXs } from "./Shared";
-import Image from "./Image";
+import { Divider, FlexColMd, FlexColRg, FlexXs } from "./Shared";
+import Image from "./components/Image";
 import CSharp from "./images/certs/c_sharp_beginner.jpg";
 import Java from "./images/certs/java_beginner.jpg";
 import React from "./images/certs/react_advanced.jpg";
@@ -9,16 +9,17 @@ import Docker from "./images/certs/docker.jpg";
 import GraphQL from "./images/certs/graphql_react.jpg";
 import Neo4j from "./images/certs/neo4j.jpg";
 import SystemDesign from "./images/certs/system_design.jpg";
+import SystemDesign2 from "./images/certs/system_design_2.jpg";
+import styled from "styled-components";
 
 export default function CertificatesArea(): JSX.Element {
   const width = 350;
-  const height = 270;
 
   return (
     <FlexColRg>
       <FlexColMd>
         <h3>Languages & Frameworks</h3>
-        <FlexXs style={{ flexWrap: "wrap", minHeight: `${height}px` }}>
+        <Box>
           <Image
             src={React}
             width={width}
@@ -43,19 +44,32 @@ export default function CertificatesArea(): JSX.Element {
             borderColour={metallic.bronze}
             label="Beginner"
           />
-        </FlexXs>
+        </Box>
+        <Divider />
       </FlexColMd>
       <FlexColMd>
-        <h3>Other</h3>
-        <FlexXs style={{ flexWrap: "wrap", minHeight: `${height}px` }}>
+        <h3>System Design</h3>
+        <Box>
           <Image
-            src={GraphQL}
+            src={SystemDesign2}
             width={width}
             borderColour={metallic.silver}
             label="Intermediate"
           />
           <Image
             src={SystemDesign}
+            width={width}
+            borderColour={metallic.silver}
+            label="Intermediate"
+          />
+        </Box>
+        <Divider />
+      </FlexColMd>
+      <FlexColMd>
+        <h3>Misc</h3>
+        <Box>
+          <Image
+            src={GraphQL}
             width={width}
             borderColour={metallic.silver}
             label="Intermediate"
@@ -72,11 +86,17 @@ export default function CertificatesArea(): JSX.Element {
             borderColour={metallic.bronze}
             label="Beginner"
           />
-        </FlexXs>
+        </Box>
+        <Divider />
       </FlexColMd>
     </FlexColRg>
   );
 }
+
+const Box = styled(FlexXs)`
+  flex-wrap: wrap;
+  min-height: 270px;
+`;
 
 const metallic = {
   gold: "linear-gradient(135deg,#f7e48b,#ffd700,#c8a200,#ffec8b,#b8860b)",

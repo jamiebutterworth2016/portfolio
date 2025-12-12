@@ -1,18 +1,18 @@
 import type { JSX } from "react";
 import styled from "styled-components";
-import { Flex } from "./Shared";
+import { Flex } from "../Shared";
 
 type ImageProps = {
   src: string;
-  width: number;
-  borderColour: string;
+  width?: number;
+  borderColour?: string;
   label?: string;
 };
 
 export default function Image({
   src,
-  width,
-  borderColour,
+  width = 72,
+  borderColour = "none",
   label,
 }: ImageProps): JSX.Element {
   return (

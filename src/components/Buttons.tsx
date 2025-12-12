@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { Colour } from "./Shared";
+import { Colour } from "../Shared";
 
 const Button = styled.button`
   all: unset;

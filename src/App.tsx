@@ -11,10 +11,10 @@ import {
   FlexCol,
 } from "./Shared";
 import React, { type JSX } from "react";
-import { Button, TabButton } from "./Buttons";
+import { Button, TabButton } from "./components/Buttons";
 import IntroArea from "./IntroArea";
 import CertificatesArea from "./CertificatesArea";
-import TimelineArea from "./TimelineArea";
+import EmployeesArea from "./EmployeesArea";
 
 function App() {
   const [activeTab, setActiveTab] = React.useState<
@@ -72,7 +72,7 @@ function App() {
         />
       )}
       {activeTab === "employers" && (
-        <Content heading={"Employers"} area={<TimelineArea />} />
+        <Content heading={"Employers"} area={<EmployeesArea />} />
       )}
     </Container>
   );

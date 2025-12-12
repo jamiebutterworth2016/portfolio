@@ -8,14 +8,14 @@ import NationalEPCCompanyLogo from "./images/NationalEPCCompanyLogo.jfif";
 import DLNRCRCLogo from "./images/DLNRCRCLogo.jpeg";
 import type { JSX } from "react";
 import styled from "styled-components";
-import Image from "./Image";
+import Image from "./components/Image";
 
-export default function TimelineArea(): JSX.Element {
+export default function EmployeesArea(): JSX.Element {
   return (
     <FlexColMd>
       <Item
         headline="Lead Engineer, Neve Learning"
-        date="September 2022 – Present"
+        date="September 2022 - Present"
         imageSrc={NeveLearningLogo}
         texts={[
           {
