@@ -1,5 +1,6 @@
 import type { JSX } from "react";
 import { Divider, FlexColMd, FlexColRg, FlexXs } from "./Shared";
+import styled from "styled-components";
 import Image from "./components/Image";
 import CSharp from "./images/certs/c_sharp_beginner.jpg";
 import Java from "./images/certs/java_beginner.jpg";
@@ -8,9 +9,11 @@ import Angular from "./images/certs/angular.jpg";
 import Docker from "./images/certs/docker.jpg";
 import GraphQL from "./images/certs/graphql_react.jpg";
 import Neo4j from "./images/certs/neo4j.jpg";
-import SystemDesign from "./images/certs/system_design.jpg";
-import SystemDesign2 from "./images/certs/system_design_2.jpg";
-import styled from "styled-components";
+import SystemDesignFrank from "./images/certs/system_design.jpg";
+import SystemDesignMichael from "./images/certs/system_design_2.jpg";
+import SystemDesignCasesMichael from "./images/certs/system_design_3.jpg";
+import SystemDesignSandeep from "./images/certs/system_design_4.jpg";
+import SystemDesignBeginner from "./images/certs/system_design_beginner.jpg";
 
 export default function CertificatesArea(): JSX.Element {
   const width = 350;
@@ -51,16 +54,34 @@ export default function CertificatesArea(): JSX.Element {
         <h3>System Design</h3>
         <Box>
           <Image
-            src={SystemDesign2}
+            src={SystemDesignMichael}
             width={width}
             borderColour={metallic.silver}
             label="Intermediate"
           />
           <Image
-            src={SystemDesign}
+            src={SystemDesignSandeep}
             width={width}
             borderColour={metallic.silver}
             label="Intermediate"
+          />
+          <Image
+            src={SystemDesignFrank}
+            width={width}
+            borderColour={metallic.silver}
+            label="Intermediate"
+          />
+          <Image
+            src={SystemDesignCasesMichael}
+            width={width}
+            borderColour={metallic.silver}
+            label="Intermediate"
+          />
+          <Image
+            src={SystemDesignBeginner}
+            width={width}
+            borderColour={metallic.bronze}
+            label="Beginner"
           />
         </Box>
         <Divider />
