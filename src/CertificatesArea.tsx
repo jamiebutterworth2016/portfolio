@@ -1,7 +1,6 @@
 import type { JSX } from "react";
-import { Divider, FlexColMd, FlexColRg, FlexXs } from "./Shared";
+import { Divider, Flex, FlexColMd, FlexColRg, FlexXs } from "./Shared";
 import styled from "styled-components";
-import Image from "./components/Image";
 import CSharp from "./images/certs/c_sharp_beginner.jpg";
 import Java from "./images/certs/java_beginner.jpg";
 import React from "./images/certs/react_advanced.jpg";
@@ -14,99 +13,39 @@ import SystemDesignMichael from "./images/certs/system_design_2.jpg";
 import SystemDesignCasesMichael from "./images/certs/system_design_3.jpg";
 import SystemDesignSandeep from "./images/certs/system_design_4.jpg";
 import SystemDesignBeginner from "./images/certs/system_design_beginner.jpg";
+import SystemDesignMehmet from "./images/certs/system_design_mehmet.jpg";
 
 export default function CertificatesArea(): JSX.Element {
-  const width = 350;
-
   return (
     <FlexColRg>
       <FlexColMd>
         <h3>Languages & Frameworks</h3>
         <Box>
-          <Image
-            src={React}
-            width={width}
-            borderColour={metallic.gold}
-            label="Advanced"
-          />
-          <Image
-            src={Angular}
-            width={width}
-            borderColour={metallic.silver}
-            label="Intermediate"
-          />
-          <Image
-            src={CSharp}
-            width={width}
-            borderColour={metallic.bronze}
-            label="Beginner"
-          />
-          <Image
-            src={Java}
-            width={width}
-            borderColour={metallic.bronze}
-            label="Beginner"
-          />
+          <Certificate src={React} label="Expert" />
+          <Certificate src={Angular} label="Intermediate" />
+          <Certificate src={CSharp} label="Beginner" />
+          <Certificate src={Java} label="Beginner" />
         </Box>
         <Divider />
       </FlexColMd>
       <FlexColMd>
         <h3>System Design</h3>
         <Box>
-          <Image
-            src={SystemDesignMichael}
-            width={width}
-            borderColour={metallic.silver}
-            label="Intermediate"
-          />
-          <Image
-            src={SystemDesignSandeep}
-            width={width}
-            borderColour={metallic.silver}
-            label="Intermediate"
-          />
-          <Image
-            src={SystemDesignFrank}
-            width={width}
-            borderColour={metallic.silver}
-            label="Intermediate"
-          />
-          <Image
-            src={SystemDesignCasesMichael}
-            width={width}
-            borderColour={metallic.silver}
-            label="Intermediate"
-          />
-          <Image
-            src={SystemDesignBeginner}
-            width={width}
-            borderColour={metallic.bronze}
-            label="Beginner"
-          />
+          <Certificate src={SystemDesignMichael} label="Intermediate" />
+          <Certificate src={SystemDesignSandeep} label="Intermediate" />
+          <Certificate src={SystemDesignFrank} label="Intermediate" />
+          <Certificate src={SystemDesignCasesMichael} label="Intermediate" />
+          <Certificate src={SystemDesignMehmet} label="Beginner" />
+          <Certificate src={SystemDesignBeginner} label="Beginner" />
         </Box>
         <Divider />
       </FlexColMd>
       <FlexColMd>
         <h3>Misc</h3>
         <Box>
-          <Image
-            src={GraphQL}
-            width={width}
-            borderColour={metallic.silver}
-            label="Intermediate"
-          />
-          <Image
-            src={Docker}
-            width={width}
-            borderColour={metallic.bronze}
-            label="Beginner"
-          />
-          <Image
-            src={Neo4j}
-            width={width}
-            borderColour={metallic.bronze}
-            label="Beginner"
-          />
+          <Certificate src={GraphQL} label="Intermediate" />
+          <Certificate src={Docker} label="Beginner" />
+          <Certificate src={Neo4j} label="Beginner" />
         </Box>
         <Divider />
       </FlexColMd>
@@ -114,9 +53,59 @@ export default function CertificatesArea(): JSX.Element {
   );
 }
 
+type CertificateProps = {
+  src: string;
+  label: "Beginner" | "Intermediate" | "Expert";
+};
+
+function Certificate({ src, label }: CertificateProps): JSX.Element {
+  let borderColour = "";
+  switch (label) {
+    case "Beginner":
+      borderColour = metallic.bronze;
+      break;
+    case "Intermediate":
+      borderColour = metallic.silver;
+      break;
+    case "Expert":
+      borderColour = metallic.gold;
+      break;
+  }
+
+  return (
+    <CertificateContainer
+      style={{
+        border: `5px solid transparent`,
+        borderImage: `${borderColour} 1`,
+        borderImageSlice: 1,
+      }}
+    >
+      <Label style={{ background: borderColour }}>{label}</Label>
+      <img src={src} />
+    </CertificateContainer>
+  );
+}
+
+const CertificateContainer = styled(Flex)`
+  position: relative;
+  overflow: hidden;
+  max-width: 15rem; /* controls overall size */
+  aspect-ratio: 1600 / 1190;
+`;
+
+const Label = styled.div`
+  position: absolute;
+  top: 8px;
+  left: 58px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+`;
+
 const Box = styled(FlexXs)`
   flex-wrap: wrap;
-  min-height: 270px;
 `;
 
 const metallic = {

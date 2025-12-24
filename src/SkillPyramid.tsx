@@ -4,7 +4,7 @@ import { Colour, FlexColMd, FlexMd, FlexSm } from "./Shared";
 const SkillPyramid = () => {
   const pyramidLevels: string[][] = [
     ["TypeScript", "JavaScript", "C#", "Java", "HTML", "CSS", "SQL"],
-    ["React", "Node.js", ".NET", "Spring Boot", "Playwright"],
+    ["React", "Angular", "Node.js", ".NET", "Spring Boot", "Playwright"],
     ["PostgreSQL", "SQL Server", "MongoDB", "RabbitMQ", "AWS SQS"],
     ["AWS", "GCP", "Terraform"],
   ];
