@@ -4,67 +4,44 @@ import Me from "./images/me.jpeg";
 import {
   FlexColMd,
   FlexColSm,
-  Flex,
   FlexEnd,
   FlexSm,
   Colour,
   FlexCol,
 } from "./Shared";
 import React, { type JSX } from "react";
-import { Button, TabButton } from "./components/Buttons";
-import IntroArea from "./IntroArea";
-import CertificatesArea from "./CertificatesArea";
+import { Button } from "./components/Buttons";
+import Home from "./Home";
 import EmployeesArea from "./EmployeesArea";
+import { type Tab, Tabs } from "./Tabs";
+import ClientsArea from "./ClientsArea";
 
 function App() {
-  const [activeTab, setActiveTab] = React.useState<
-    "intro" | "certificates" | "employers"
-  >("intro");
+  const [activeTab, setActiveTab] = React.useState<Tab>("intro");
 
   return (
     <Container>
       <FlexColSm>
         <HeaderRow>
           <h1>Jamie Butterworth</h1>
-          <IntroImage src={Me} />
         </HeaderRow>
-
-        <TabsRow>
-          <TabButton
-            selected={activeTab === "intro"}
-            onClick={() => setActiveTab("intro")}
-          >
-            Introduction
-          </TabButton>
-          <TabButton
-            selected={activeTab === "certificates"}
-            onClick={() => setActiveTab("certificates")}
-          >
-            Certificates
-          </TabButton>
-          <TabButton
-            selected={activeTab === "employers"}
-            onClick={() => setActiveTab("employers")}
-          >
-            Employers
-          </TabButton>
-        </TabsRow>
+        <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
       </FlexColSm>
 
       {activeTab === "intro" && (
         <Content
           heading={"Introduction"}
-          area={<IntroArea />}
-          nextTitle="View my certificates"
+          area={<Home />}
+          nextTitle="View my clients"
           nextClick={() => {
-            setActiveTab("certificates");
+            setActiveTab("clients");
           }}
         />
       )}
-      {activeTab === "certificates" && (
+      {activeTab === "clients" && (
         <Content
-          heading={"Certificates"}
-          area={<CertificatesArea />}
+          heading={"Clients"}
+          area={<ClientsArea />}
           nextTitle="View my employers"
           nextClick={() => {
             setActiveTab("employers");
@@ -118,11 +95,6 @@ const TabContent = styled(FlexColMd)`
 const NextButtonRow = styled(FlexEnd)`
   max-width: 800px;
   padding: 16px;
-`;
-
-const TabsRow = styled(Flex)`
-  gap: 1rem;
-  border-bottom: 2px solid ${Colour.blue};
 `;
 
 const HeaderRow = styled(FlexSm)`

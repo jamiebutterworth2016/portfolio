@@ -1,5 +1,5 @@
 import type { JSX } from "react";
-import { Divider, Flex, FlexColMd, FlexColRg, FlexXs } from "./Shared";
+import { Card, Divider, Flex, FlexColMd, FlexColRg, FlexXs } from "./Shared";
 import styled from "styled-components";
 import CSharp from "./images/certs/c_sharp_beginner.jpg";
 import Java from "./images/certs/java_beginner.jpg";
@@ -8,7 +8,7 @@ import Angular from "./images/certs/angular.jpg";
 import Docker from "./images/certs/docker.jpg";
 import GraphQL from "./images/certs/graphql_react.jpg";
 import Neo4j from "./images/certs/neo4j.jpg";
-import SystemDesignAnurag from "./images/certs/system_design_michael.jpg";
+import SystemDesignAnurag from "./images/certs/system_design_anurag.jpg";
 import SystemDesignMichael from "./images/certs/system_design_michael.jpg";
 import SystemDesignMichaelEvent from "./images/certs/system_design_michael_event.jpg";
 import SystemDesignMichaelCases from "./images/certs/system_design_michael_cases.jpg";
@@ -19,41 +19,45 @@ import SystemDesignBeginner from "./images/certs/system_design_beginner.jpg";
 
 export default function CertificatesArea(): JSX.Element {
   return (
-    <FlexColRg>
-      <FlexColMd>
-        <h3>Languages & Frameworks</h3>
-        <Box>
-          <Certificate src={React} label="Expert" />
-          <Certificate src={Angular} label="Intermediate" />
-          <Certificate src={GraphQL} label="Intermediate" />
-          <Certificate src={CSharp} label="Beginner" />
-          <Certificate src={Java} label="Beginner" />
-        </Box>
-        <Divider />
-      </FlexColMd>
-      <FlexColMd>
-        <h3>System Design</h3>
-        <Box>
-          <Certificate src={SystemDesignAnurag} label="Intermediate" />
-          <Certificate src={SystemDesignMichael} label="Intermediate" />
-          <Certificate src={SystemDesignMichaelEvent} label="Intermediate" />
-          <Certificate src={SystemDesignMichaelCases} label="Intermediate" />
-          <Certificate src={SystemDesignSandeep} label="Intermediate" />
-          <Certificate src={SystemDesignFrank} label="Intermediate" />
-          <Certificate src={SystemDesignMehmet} label="Beginner" />
-          <Certificate src={SystemDesignBeginner} label="Beginner" />
-        </Box>
-        <Divider />
-      </FlexColMd>
-      <FlexColMd>
-        <h3>Misc</h3>
-        <Box>
-          <Certificate src={Docker} label="Beginner" />
-          <Certificate src={Neo4j} label="Beginner" />
-        </Box>
-        <Divider />
-      </FlexColMd>
-    </FlexColRg>
+    <Card style={{ maxWidth: "100%" }}>
+      <FlexColRg>
+        <h2>Certificates</h2>
+
+        <FlexColMd>
+          <h3>Languages & Frameworks</h3>
+          <Box>
+            <Certificate src={React} label="Expert" />
+            <Certificate src={Angular} label="Intermediate" />
+            <Certificate src={GraphQL} label="Intermediate" />
+            <Certificate src={CSharp} label="Beginner" />
+            <Certificate src={Java} label="Beginner" />
+          </Box>
+          <Divider />
+        </FlexColMd>
+        <FlexColMd>
+          <h3>System Design</h3>
+          <Box>
+            <Certificate src={SystemDesignAnurag} label="Intermediate" />
+            <Certificate src={SystemDesignMichael} label="Intermediate" />
+            <Certificate src={SystemDesignMichaelEvent} label="Intermediate" />
+            <Certificate src={SystemDesignMichaelCases} label="Intermediate" />
+            <Certificate src={SystemDesignSandeep} label="Intermediate" />
+            <Certificate src={SystemDesignFrank} label="Intermediate" />
+            <Certificate src={SystemDesignMehmet} label="Beginner" />
+            <Certificate src={SystemDesignBeginner} label="Beginner" />
+          </Box>
+          <Divider />
+        </FlexColMd>
+        <FlexColMd>
+          <h3>Misc</h3>
+          <Box>
+            <Certificate src={Docker} label="Beginner" />
+            <Certificate src={Neo4j} label="Beginner" />
+          </Box>
+          <Divider />
+        </FlexColMd>
+      </FlexColRg>
+    </Card>
   );
 }
 

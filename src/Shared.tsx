@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Sizes = {
-  maxWidth: "800px",
+  maxWidth: "640px",
 };
 
 const Flex = styled.div`
@@ -73,9 +73,8 @@ const Divider = styled.hr`
 `;
 
 const Card = styled(FlexColMd)`
-  padding: 16px;
   max-width: ${Sizes.maxWidth};
-
+  padding: 16px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

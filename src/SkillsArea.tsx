@@ -10,6 +10,7 @@ import {
   FlexColBetween,
   FlexEnd,
   FlexStart,
+  Card,
 } from "./Shared";
 import styled from "styled-components";
 import { TechSkillButton, SoftSkillButton, Button } from "./components/Buttons";
@@ -20,7 +21,7 @@ type Category = {
   details: string[];
 };
 
-export default function SkillsArea() {
+export default function SkillsCard() {
   const tech = data.tech as Category[];
   const soft = data.soft as Category[];
 
@@ -48,7 +49,7 @@ export default function SkillsArea() {
 
   return (
     <>
-      <>
+      <Card>
         <FlexColMd>
           <p>Click a skill to find out more:</p>
           <FlexColMd>
@@ -81,7 +82,7 @@ export default function SkillsArea() {
             </SkillsRow>
           </FlexColMd>
         </FlexColMd>
-      </>
+      </Card>
 
       {selectedSkill && (
         <SkillModal
@@ -206,13 +207,14 @@ const ModalBackground = styled.div`
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 10; //grey over the top
 `;
 
 const ModalBody = styled(FlexColBetween)`
   height: 400px;
   max-width: 900px;
   position: relative;
-  top: 300px;
+  top: 100px;
   left: 50px;
   background: ${Colour.white};
   padding: 1.5rem;
