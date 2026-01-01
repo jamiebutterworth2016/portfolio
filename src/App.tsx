@@ -1,6 +1,5 @@
 import "./App.css";
 import styled from "styled-components";
-import Me from "./images/me.jpeg";
 import {
   FlexColMd,
   FlexColSm,
@@ -104,9 +103,9 @@ const HeaderRow = styled(FlexSm)`
   width: 100%;
 `;
 
-const IntroImage = styled.img`
-  width: 120px;
-  border-radius: 16px;
-`;
+// const IntroImage = styled.img`
+//   width: 120px;
+//   border-radius: 16px;
+// `;
 
 export default App;
