@@ -8,6 +8,7 @@ import Angular from "./images/certs/angular.jpg";
 import Docker from "./images/certs/docker.jpg";
 import GraphQL from "./images/certs/graphql_react.jpg";
 import Neo4j from "./images/certs/neo4j.jpg";
+import SystemDesignAnurag from "./images/certs/system_design_michael.jpg";
 import SystemDesignMichael from "./images/certs/system_design_michael.jpg";
 import SystemDesignMichaelEvent from "./images/certs/system_design_michael_event.jpg";
 import SystemDesignMichaelCases from "./images/certs/system_design_michael_cases.jpg";
@@ -33,6 +34,7 @@ export default function CertificatesArea(): JSX.Element {
       <FlexColMd>
         <h3>System Design</h3>
         <Box>
+          <Certificate src={SystemDesignAnurag} label="Intermediate" />
           <Certificate src={SystemDesignMichael} label="Intermediate" />
           <Certificate src={SystemDesignMichaelEvent} label="Intermediate" />
           <Certificate src={SystemDesignMichaelCases} label="Intermediate" />
