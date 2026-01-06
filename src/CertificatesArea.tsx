@@ -1,6 +1,8 @@
 import type { JSX } from "react";
 import { Card, Divider, Flex, FlexColMd, FlexColRg, FlexXs } from "./Shared";
 import styled from "styled-components";
+
+//LANGUAGES & FRAMEWORKS
 import CSharp from "./images/certs/c_sharp_beginner.jpg";
 import Java from "./images/certs/java_beginner.jpg";
 import React from "./images/certs/react_advanced.jpg";
@@ -8,6 +10,9 @@ import Angular from "./images/certs/angular.jpg";
 import Docker from "./images/certs/docker.jpg";
 import GraphQL from "./images/certs/graphql_react.jpg";
 import Neo4j from "./images/certs/neo4j.jpg";
+import DotNetMicroservices from "./images/certs/dotnet_microservices.jpg"
+
+//SYSTEM DESIGN
 import SystemDesignAnurag from "./images/certs/system_design_anurag.jpg";
 import SystemDesignMichael from "./images/certs/system_design_michael.jpg";
 import SystemDesignMichaelEvent from "./images/certs/system_design_michael_event.jpg";
@@ -28,6 +33,7 @@ export default function CertificatesArea(): JSX.Element {
           <Box>
             <Certificate src={React} label="Expert" />
             <Certificate src={Angular} label="Intermediate" />
+            <Certificate src={DotNetMicroservices} label="Intermediate" />
             <Certificate src={GraphQL} label="Intermediate" />
             <Certificate src={CSharp} label="Beginner" />
             <Certificate src={Java} label="Beginner" />

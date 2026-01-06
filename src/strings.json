@@ -1,14 +1,15 @@
 {
   "tech": [
     {
-      "key": "backend",
-      "title": "🧱 System Design",
+      "key": "system",
+      "title": "🚀 Large Scale System Design",
       "details": [
-        "Designs scalable, modular architectures using <strong>Node.js</strong>, <strong>React</strong> and <strong>PostgreSQL</strong>.",
-        "Develops <strong>RESTful APIs</strong> with <strong>Express</strong> to handle data requests and backend logic.",
-        "Builds <strong>Node.js background workers</strong> to consume <strong>AWS SQS queues</strong> for AI content generation and notifications.",
-        "Documents architecture diagrams to clarify component interactions and data flow.",
-        "Applies proven design principles and patterns to ensure maintainable and testable code."
+        "High-performing systems supporting large-scale growth, from modular monoliths to distributed, scalable microservices.",
+        "<strong>RESTful</strong> microservices (<strong>ASP.NET Core</strong> and <strong>Node.js</strong>) using event-driven communication via <strong>RabbitMQ</strong>, <strong>AWS SQS</strong> and <strong>Kafka</strong>.",
+        "Applies the CAP theorem to select data storage: relational databases (<strong>PostgreSQL</strong>, <strong>SQL Server</strong>), document stores (<strong>MongoDB</strong>) and wide-column databases (<strong>Cassandra</strong>).",
+        "<strong>CI/CD</strong> pipelines using <strong>GitHub Actions</strong> to automate build, test and deployment to cloud environments (<strong>AWS</strong> and <strong>GCP</strong>).",
+        "<strong>Docker</strong> and <strong>Kubernetes</strong> for scaling and orchestrating microservices.",
+        "Documentation with network diagrams to ensure maintainability and clarity."
       ]
     },
     {
@@ -24,7 +25,7 @@
       ]
     },
     {
-      "key": "frontend",
+      "key": "ui",
       "title": "🎨 UI/UX, Design & Accessibility",
       "details": [
         "Builds modern, component-driven UIs with <strong>React</strong> and <strong>TypeScript</strong>.",
@@ -40,9 +41,7 @@
       "title": "☁️ Cloud DevOps & AI Integration",
       "details": [
         "Deploys <strong>AWS cloud infrastructure</strong> with <strong>Terraform</strong> code-to-infrastructure implementation.",
-        "Builds <strong>CI/CD pipelines</strong> with <strong>GitHub Actions</strong> for automated, multi-environment deployments.",
         "Manages AWS infrastructure components, including CloudFront, Elastic Beanstalk, ECS and RDS.",
-        "Uses <strong>Docker</strong> for containerised microservices to ensure consistent environments.",
         "Integrates <strong>AWS cloud AI services</strong> and <strong>OpenAI APIs</strong> to automate course creation and content generation.",
         "Integrated <strong>AWS Polly</strong> to generate audio transcripts and <strong>OpenAI</strong> for video transcripts.",
         "Integrated <strong>Stripe API</strong> to take payments."
