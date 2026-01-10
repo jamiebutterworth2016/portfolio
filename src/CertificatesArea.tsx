@@ -1,16 +1,29 @@
 import type { JSX } from "react";
-import { Card, Divider, Flex, FlexColMd, FlexColRg, FlexXs } from "./Shared";
+import {
+  Card,
+  Colour,
+  Divider,
+  Flex,
+  FlexColMd,
+  FlexColRg,
+  FlexColSm,
+  FlexSm,
+  FlexXs,
+} from "./Shared";
 import styled from "styled-components";
 
-//LANGUAGES & FRAMEWORKS
-import CSharp from "./images/certs/c_sharp_beginner.jpg";
-import Java from "./images/certs/java_beginner.jpg";
-import React from "./images/certs/react_advanced.jpg";
+//FRAMEWORKS
+import ReactAdvanced from "./images/certs/react_advanced.jpg";
+import ReactTypescript from "./images/certs/react_typescript_max.jpg";
 import Angular from "./images/certs/angular.jpg";
 import Docker from "./images/certs/docker.jpg";
-import GraphQL from "./images/certs/graphql_react.jpg";
+import ReactGraphQL from "./images/certs/graphql_react.jpg";
 import Neo4j from "./images/certs/neo4j.jpg";
-import DotNetMicroservices from "./images/certs/dotnet_microservices.jpg"
+import DotNetMicroservices from "./images/certs/dotnet_microservices.jpg";
+
+//LANGUAGES
+import CSharp from "./images/certs/c_sharp_beginner.jpg";
+import Java from "./images/certs/java_beginner.jpg";
 
 //SYSTEM DESIGN
 import SystemDesignAnurag from "./images/certs/system_design_anurag.jpg";
@@ -27,16 +40,33 @@ export default function CertificatesArea(): JSX.Element {
     <Card style={{ maxWidth: "100%" }}>
       <FlexColRg>
         <h2>Certificates</h2>
-
         <FlexColMd>
           <h3>Languages & Frameworks</h3>
           <Box>
-            <Certificate src={React} label="Expert" />
-            <Certificate src={Angular} label="Intermediate" />
-            <Certificate src={DotNetMicroservices} label="Intermediate" />
-            <Certificate src={GraphQL} label="Intermediate" />
-            <Certificate src={CSharp} label="Beginner" />
-            <Certificate src={Java} label="Beginner" />
+            <Container style={{backgroundColor: "#00aeff12"}}>
+              <h4>React Typescript</h4>
+              <FlexSm style={{ flexWrap: "wrap" }}>
+                <Certificate src={ReactAdvanced} label="Expert" />
+                <Certificate src={ReactTypescript} label="Intermediate" />
+                <Certificate src={ReactGraphQL} label="Intermediate" />
+              </FlexSm>
+            </Container>
+
+            <Container style={{backgroundColor: "#bf00ff12"}}>
+              <h4>.NET C#</h4>
+              <FlexSm style={{ flexWrap: "wrap" }}>
+                <Certificate src={DotNetMicroservices} label="Intermediate" />
+                <Certificate src={CSharp} label="Beginner" />
+              </FlexSm>
+            </Container>
+
+            <Container>
+              <h4>Other</h4>
+              <FlexSm style={{ flexWrap: "wrap" }}>
+                <Certificate src={Angular} label="Intermediate" />
+                <Certificate src={Java} label="Beginner" />
+              </FlexSm>
+            </Container>
           </Box>
           <Divider />
         </FlexColMd>
@@ -66,6 +96,14 @@ export default function CertificatesArea(): JSX.Element {
     </Card>
   );
 }
+
+const Container = styled(FlexColSm)`
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: ${Colour.white};
+`;
 
 type CertificateProps = {
   src: string;
