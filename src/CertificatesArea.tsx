@@ -15,6 +15,8 @@ import styled from "styled-components";
 //FRAMEWORKS
 import ReactAdvanced from "./images/certs/react_advanced.jpg";
 import ReactTypescript from "./images/certs/react_typescript_max.jpg";
+import ReactRedux from "./images/certs/redux.jpg";
+
 import Angular from "./images/certs/angular.jpg";
 import Docker from "./images/certs/docker.jpg";
 import ReactGraphQL from "./images/certs/graphql_react.jpg";
@@ -43,16 +45,17 @@ export default function CertificatesArea(): JSX.Element {
         <FlexColMd>
           <h3>Languages & Frameworks</h3>
           <Box>
-            <Container style={{backgroundColor: "#00aeff12"}}>
+            <Container style={{ backgroundColor: "#00aeff12" }}>
               <h4>React Typescript</h4>
               <FlexSm style={{ flexWrap: "wrap" }}>
                 <Certificate src={ReactAdvanced} label="Expert" />
                 <Certificate src={ReactTypescript} label="Intermediate" />
                 <Certificate src={ReactGraphQL} label="Intermediate" />
+                <Certificate src={ReactRedux} label="Beginner" />
               </FlexSm>
             </Container>
 
-            <Container style={{backgroundColor: "#bf00ff12"}}>
+            <Container style={{ backgroundColor: "#bf00ff12" }}>
               <h4>.NET C#</h4>
               <FlexSm style={{ flexWrap: "wrap" }}>
                 <Certificate src={DotNetMicroservices} label="Intermediate" />
